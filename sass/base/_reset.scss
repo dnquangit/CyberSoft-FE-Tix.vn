@@ -1,0 +1,35 @@
+/* FONT */
+@font-face{
+    font-family:'SF Regular';
+    src:url(../assets/fonts/SF-UI-Display-Regular.otf);
+    src:url(../assets/fonts/SF-UI-Display-Regular.otf) format('opentype')
+}
+@font-face{
+    font-family:'SF Medium';
+    src:url(../assets/fonts/SF-UI-Display-Medium.otf);
+    src:url(../assets/fonts/SF-UI-Display-Medium.otf) format('opentype')
+}
+@font-face{
+    font-family:'SF Text Regular';
+    src:url(../assets/fonts/SF-UI-Text-Regular.otf);
+    src:url(../assets/fonts/SF-UI-Text-Regular.otf) format('opentype')} /* body use this font */
+@font-face{
+    font-family:'SF Text Medium';
+    src:url(../assets/fonts/SF-UI-Text-Medium.otf);
+    src:url(../assets/fonts/SF-UI-Text-Medium.otf) format('opentype')}
+@font-face{
+    font-family:'Gotham Ultra';
+    src:url(../assets/fonts/Gotham-Ultra.otf);
+    src:url(../assets/fonts/Gotham-Ultra.otf) format('opentype')
+}
+
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family:'SF Text Regular';
+}
