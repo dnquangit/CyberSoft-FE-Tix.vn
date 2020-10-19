@@ -188,8 +188,8 @@ footer .footer__title {
 }
 
 footer .footer__block1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 footer .footer__block1 .footer__FAQ a {
@@ -245,7 +245,7 @@ footer .footer__block1 .footer__social img {
 
 footer .footer__block2 {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-top: solid 1px #949494;
 }
 
