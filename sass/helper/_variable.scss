@@ -1,0 +1,32 @@
+// variable color
+$color-black-0: #000; 
+$color-gray-0: #9b9b9b;
+$color-gray-1: #4a4a4a;
+$color-gray-2: #949494;
+$color-white-0:#fff;
+
+// variable font-size
+$fs-0: 11.2px;
+$fs-1: 12px;
+$fs-2: 13px;
+$fs-3: 14px; 
+$fs-4: 16px;
+$fs-5: 24px;
+$fs-6: 32px;
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 700;
+
+//variable padding
+$pd-0: 5px; 
+$pd-1: 10px;
+$pd-2: 20px;
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)
