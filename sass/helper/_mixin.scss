@@ -1,3 +1,7 @@
+@mixin fontText($font-family) {
+    font-family: $font-family;
+}
+
 @mixin styleText($color, $fs, $fw) {
     color: $color;
     font-size: $fs;

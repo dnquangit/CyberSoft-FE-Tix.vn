@@ -18,9 +18,84 @@
 </head>
 <body>
     
-    <header>
+    <header>        
+        <nav class="navbar navbar-expand-lg">
+            <a class="col-lg-4 navbar-brand logo" href="#">
+                <img src="./assets/img/img-header/web-logo.png" alt="logo">
+            </a>
 
+            <ul class="col-lg-4 navbar-nav header__center">
+                <li><a href="#">Lịch chiếu</a></li>
+                <li><a href="#">Cụm rạp</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li> <a href="#">Ứng dụng</a></li>
+            </ul>
 
+            <div class="col-lg-4 navbar-nav justify-content-end header__right ">
+                <div class="header__account">
+                    <i class="fas fa-user-circle"></i>
+                    <a href="#"> Đăng nhập </a>
+                </div>
+                <div class="header__location">
+                    <i class="header__iconMap fas fa-map-marker-alt"></i>                  
+                    <a class="header__dropdownSelected" href="#"> Hồ Chí Minh </a>
+                    <a class="header__drowdownBtn" href="#"><i class="fas fa-chevron-down"></i></a>
+                    <div class="header__dropdownMenu">
+                        <a class="header__dropdownItem">Hồ Chí Minh</a>
+                        <a class="header__dropdownItem">Hà Nội</a>
+                        <a class="header__dropdownItem">Đà Nẵng</a>
+                        <a class="header__dropdownItem">Hải Phòng</a>
+                        <a class="header__dropdownItem">Biên Hoà</a>
+                        <a class="header__dropdownItem">Nha Trang</a>
+                        <a class="header__dropdownItem">Bình Dương</a>
+                        <a class="header__dropdownItem">Phan Thiết</a>
+                        <a class="header__dropdownItem">Hạ Long</a>
+                        <a class="header__dropdownItem">Cần Thơ</a>
+                        <a class="header__dropdownItem">Vũng Tàu</a>
+                        <a class="header__dropdownItem">Quy Nhơn</a>
+                        <a class="header__dropdownItem">Huế</a>
+                        <a class="header__dropdownItem">Long Xuyên</a>
+                        <a class="header__dropdownItem">Thái Nguyên</a>
+                        <a class="header__dropdownItem">Buôn Ma Thuột</a>
+                        <a class="header__dropdownItem">Bắc Giang</a>
+                        <a class="header__dropdownItem">Bến Tre</a>
+                        <a class="header__dropdownItem">Việt Trì</a>
+                        <a class="header__dropdownItem">Ninh Bình</a>
+                        <a class="header__dropdownItem">Thái Bình</a>
+                        <a class="header__dropdownItem">Vinh</a>
+                        <a class="header__dropdownItem">Bảo Lộc</a>
+                        <a class="header__dropdownItem">Đà Lạt</a>
+                        <a class="header__dropdownItem">Trà Vinh</a>
+                        <a class="header__dropdownItem">Yên Bái</a>
+                        <a class="header__dropdownItem">Kiên Giang</a>
+                        <a class="header__dropdownItem">Vĩnh Long</a>
+                        <a class="header__dropdownItem">Cà Mau</a>
+                        <a class="header__dropdownItem">Hậu Giang</a>
+                        <a class="header__dropdownItem">Tây Ninh</a>
+                        <a class="header__dropdownItem">Tuyên Quang</a>
+                        <a class="header__dropdownItem">Thanh Hóa</a>
+                        <a class="header__dropdownItem">Nam Định</a>
+                        <a class="header__dropdownItem">Hải Dương</a>
+                        <a class="header__dropdownItem">Gia Lai</a>
+                        <a class="header__dropdownItem">Hà Tĩnh</a>
+                        <a class="header__dropdownItem">Phú Yên</a>
+                        <a class="header__dropdownItem">Bạc Liêu</a>
+                        <a class="header__dropdownItem">Long An</a>
+                        <a class="header__dropdownItem">Đồng Hới</a>
+                        <a class="header__dropdownItem">Hà Nam</a>
+                        <a class="header__dropdownItem">Bắc Ninh</a>
+                        <a class="header__dropdownItem">Quảng Trị</a>
+                        <a class="header__dropdownItem">Kon Tum</a>
+                        <a class="header__dropdownItem">Sóc Trăng</a>
+                        <a class="header__dropdownItem">Sơn La</a>
+                        <a class="header__dropdownItem">Lạng Sơn</a>
+                        <a class="header__dropdownItem">Quảng Ngãi</a>
+                        <a class="header__dropdownItem">Đồng Tháp</a>
+                        <a class="header__dropdownItem">Hưng Yên</a>   
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <section class="carousel">
 
@@ -58,6 +133,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <!-- internal script -->
+    <script>
 
+        // dropdown header
+        let dropdownBtn = $('.header__drowdownBtn');
+        let menuContent = $('.header__dropdownMenu');
+        dropdownBtn.click(function(){
+            if (menuContent.css('display') === '' || menuContent.css('display') === 'none'){
+                menuContent.css('display', 'block');
+                menuContent.css('top', ("&1 px").replace('&1', $('header').height()));
+            }
+            else{
+                menuContent.css('display', '');
+            }
+        });
+        $('.header__dropdownItem').click(function(e){
+            menuContent.css('display', '');
+            $('.header__dropdownSelected').text(e.currentTarget.text);
+        }) 
+        
+    </script>
+    
 </body>
 </html>
