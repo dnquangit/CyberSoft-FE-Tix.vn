@@ -75,11 +75,6 @@ footer {
 
         border-top: solid 1px $color-gray-2;
 
-        p {
-            @include styleText($color-gray-2, $fs-1, $fw-normal);
-            line-height: 0.5;
-        }
-
         .col-lg-1 {
             padding-left: 0px;
             img {
@@ -100,6 +95,11 @@ footer {
         .col-lg-9{
             a {
                 color: $color-red-0;
+            }
+
+            .footer__block2-infor {
+                @include styleText($color-gray-2, $fs-1, $fw-normal);
+                line-height: 0.5;
             }
         }       
     }

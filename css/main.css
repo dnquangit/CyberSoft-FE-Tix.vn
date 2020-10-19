@@ -249,13 +249,6 @@ footer .footer__block2 {
   border-top: solid 1px #949494;
 }
 
-footer .footer__block2 p {
-  color: #949494;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 0.5;
-}
-
 footer .footer__block2 .col-lg-1 {
   padding-left: 0px;
 }
@@ -273,6 +266,13 @@ footer .footer__block2 .col-lg-2 img {
 
 footer .footer__block2 .col-lg-9 a {
   color: #ff0000;
+}
+
+footer .footer__block2 .col-lg-9 .footer__block2-infor {
+  color: #949494;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 0.5;
 }
 
 /* CAROUSEL */
