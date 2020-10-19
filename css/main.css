@@ -45,6 +45,13 @@ body {
   padding-top: 76px;
 }
 
+.main-container-940 {
+  max-width: 940px;
+  float: none;
+  margin: auto;
+  clear: both;
+}
+
 header {
   font-family: "SF Regular";
   position: fixed;
@@ -170,6 +177,104 @@ header .header__right .header__location .header__dropdownItem:hover {
   text-decoration: none;
 }
 
+footer {
+  background-color: #222;
+  color: #949494;
+}
+
+footer .footer__title {
+  color: #fff;
+  font-size: 11.2px;
+}
+
+footer .footer__block1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .footer__block1 .footer__FAQ a {
+  color: #949494;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  display: block;
+  transition: all .2s;
+  line-height: 2.3;
+}
+
+footer .footer__block1 .footer__FAQ a:hover {
+  color: #fff;
+}
+
+footer .footer__block1 .footer__partner a {
+  padding-top: 10px;
+}
+
+footer .footer__block1 .footer__partner a:first-child {
+  padding-top: 0px;
+}
+
+footer .footer__block1 .footer__partner img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+footer .footer__block1 .footer__partner .row {
+  margin-top: 10px;
+}
+
+footer .footer__block1 .footer__application img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+footer .footer__block1 .footer__social {
+  text-align: center;
+}
+
+footer .footer__block1 .footer__social img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+footer .footer__block2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid 1px #949494;
+}
+
+footer .footer__block2 p {
+  color: #949494;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 0.5;
+}
+
+footer .footer__block2 .col-lg-1 {
+  padding-left: 0px;
+}
+
+footer .footer__block2 .col-lg-1 img {
+  width: 80px;
+  height: 37px;
+  border-radius: 10px;
+}
+
+footer .footer__block2 .col-lg-2 img {
+  width: 130px;
+  height: 47px;
+}
+
+footer .footer__block2 .col-lg-9 a {
+  color: #ff0000;
+}
+
 /* CAROUSEL */
 .carousel {
   position: relative;
@@ -216,13 +321,13 @@ header .header__right .header__location .header__dropdownItem:hover {
   transform: translate(-50%, -50%);
 }
 
-.carousel .owl-theme .owl-dots .owl-dots span {
+.carousel .owl-theme .owl-dots span {
   background: #9b9b9b;
   width: 13px;
   height: 13px;
 }
 
-.carousel .owl-theme .owl-dots .owl-dot.active span {
+.carousel .owl-theme .owl-dot.active span {
   background: #ff0000;
 }
 

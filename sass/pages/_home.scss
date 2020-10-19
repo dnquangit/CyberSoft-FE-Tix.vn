@@ -32,26 +32,35 @@
     }
 
     /* override owl carousel library*/
-    .owl-carousel .animated { 
-        animation-duration: 2000ms;
-        animation-fill-mode: both; 
+    .owl-carousel { 
+
+        .animated {
+            animation-duration: 2000ms;
+            animation-fill-mode: both; 
+        }
     }
 
-    .owl-theme .owl-dots{
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .owl-theme {
 
-        .owl-dots span{
-            background: $color-gray-0;
-            width: 13px;
-            height: 13px;
+        .owl-dots {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            span{
+                background: $color-gray-0;
+                width: 13px;
+                height: 13px;
+            }
         }
 
-        .owl-dot.active span{
-            background: $color-red-0;
+        .owl-dot.active {
+            span {
+                background: $color-red-0;
+            }
         }
+
     }
        
     .carousel__prev{

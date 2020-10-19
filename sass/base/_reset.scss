@@ -37,3 +37,10 @@ html,body{
 body{
     padding-top: $spacing-between-body-and-top;
 }
+
+.main-container-940 {
+    max-width: 940px;
+    float: none;
+    margin: auto;
+    clear: both;
+}
