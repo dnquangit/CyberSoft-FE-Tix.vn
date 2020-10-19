@@ -33,3 +33,7 @@
 html,body{
     font-family:'SF Text Regular';
 }
+
+body{
+    padding-top: $spacing-between-body-and-top;
+}
