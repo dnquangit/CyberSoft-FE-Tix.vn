@@ -75,7 +75,7 @@ footer {
 
         border-top: solid 1px $color-gray-2;
 
-        .col-lg-1 {
+        .footer__block2-left {
             padding-left: 0px;
             img {
                 width: 80px;
@@ -85,14 +85,15 @@ footer {
             }
         }
 
-        .col-lg-2 {
+        .footer__block2-right {
             img {
                 width: 130px;
                 height: 47px;
             }
         }
         
-        .col-lg-9{
+        .footer__block2-center{
+
             a {
                 color: $color-red-0;
             }

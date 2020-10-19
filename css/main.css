@@ -249,26 +249,26 @@ footer .footer__block2 {
   border-top: solid 1px #949494;
 }
 
-footer .footer__block2 .col-lg-1 {
+footer .footer__block2 .footer__block2-left {
   padding-left: 0px;
 }
 
-footer .footer__block2 .col-lg-1 img {
+footer .footer__block2 .footer__block2-left img {
   width: 80px;
   height: 37px;
   border-radius: 10px;
 }
 
-footer .footer__block2 .col-lg-2 img {
+footer .footer__block2 .footer__block2-right img {
   width: 130px;
   height: 47px;
 }
 
-footer .footer__block2 .col-lg-9 a {
+footer .footer__block2 .footer__block2-center a {
   color: #ff0000;
 }
 
-footer .footer__block2 .col-lg-9 .footer__block2-infor {
+footer .footer__block2 .footer__block2-center .footer__block2-infor {
   color: #949494;
   font-size: 12px;
   font-weight: normal;
