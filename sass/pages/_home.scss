@@ -109,7 +109,7 @@
         }
         .movieList-text-title.active {
             a {
-                @include styleText($color-red-1, $fs-4 + 4, $fw-normal);
+                @include styleText($color-red-2, $fs-4 + 4, $fw-normal);
             }
         }
     }
