@@ -150,16 +150,6 @@
 
     </section>
     <section class="news">
-<<<<<<< HEAD
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, pariatur assumenda ullam exercitationem harum totam magni similique molestiae cum earum incidunt culpa repellat, in aspernatur facere ad nam quisquam nobis.</p>
-        <P>aaa
-
-        </P>
-
-        <p>
-            asdas
-        </p>
-=======
         <div class="container-fluid main-container-940" id="homeNews">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
@@ -638,10 +628,42 @@
                 </div>
             </div>
         </div>
->>>>>>> e62421b... xong phan news. Chua responsive
     </section>
     <section class="banner">
-
+        <div class="container-fluid main-container-940">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <p class="left__text">Ứng dụng tiện lợi dành cho</p>
+                    <p class="left__text">người yêu điện ảnh</p>
+                    <br>
+                    <p class="left__description">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                    <br>
+                    <button class="left__button">App miễn phí - Tải về ngay!</button>
+                    <p class="left__apps">
+                        TIX có hai phiên bản
+                        <a href="#">iOS</a>
+                        <span>&amp;</span>
+                        <a href="#">Android</a>
+                    </p>
+                </div>
+                <div class="col-md-6 right">
+                    <img src="assets/img/img-banner/mobile.png" alt="" class="img-fluid phone-img">
+                    <div id="banner__carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide1.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide2.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="container-fluild main-container-940">
@@ -800,6 +822,18 @@
             carousel.trigger('next.owl.carousel',[1000]);
         })
 
+        /* BANNER CAROUSEL */
+        // let bannerCarousel = $('.owl-carousel');
+        // bannerCarousel.owlCarousel({
+        //     loop: true,
+        //     margin: 0,
+        //     nav: false,
+        //     items:1,
+        //     dots: false,
+        //     autoplay: true,
+        //     autoplayTimeout: 3000
+        // })
+
         // play video 
         $('.carousel__playVideo').magnificPopup({
             disableOn: 700,
@@ -817,7 +851,6 @@
                 }
             }
 	    }); 
-
 
     </script>
     

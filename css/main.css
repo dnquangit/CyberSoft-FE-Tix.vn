@@ -79,6 +79,19 @@ body {
   outline: none;
 }
 
+.left__button {
+  background-color: #fb4226;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+.left__button:focus {
+  outline: none;
+}
+
 header {
   font-family: "SF Regular";
   position: fixed;
@@ -441,6 +454,69 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 .news #homeNews #myNewsContent .SeeMoreNews {
   width: 100%;
   margin-bottom: 35px;
+}
+
+.banner {
+  background-image: url(../assets/img/img-banner/backapp.jpg);
+  padding: 120px 0 80px 0;
+  background-size: contain;
+}
+
+.banner .left {
+  padding-top: 60px;
+  color: #fff;
+}
+
+.banner .left .left__text {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.banner .left .left__description {
+  margin-bottom: 10px;
+}
+
+.banner .left .left__apps {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.banner .left .left__apps a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.banner .right {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .right .phone-img {
+  display: block;
+  padding: 0 28%;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner .right #banner__carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 2%;
+  padding-left: 29.3%;
+  padding-right: 29.3%;
+  padding-bottom: 0%;
+}
+
+.banner .right #banner__carousel .banner__carouselItem img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
 }
 
 /* CAROUSEL */
