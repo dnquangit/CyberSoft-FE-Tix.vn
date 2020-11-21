@@ -634,4 +634,37 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   width: 100%;
   border-radius: 20px;
 }
+
+.movieList .movieList-carousel .nav-tabs {
+  border-bottom: none;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.movieList .movieList-carousel .nav-tabs .nav-link {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  height: 24px;
+  font-family: "SF Medium";
+  display: block;
+  transition: all 0.2s;
+}
+
+.movieList .movieList-carousel .nav-tabs .nav-link:hover {
+  font-size: 24px;
+}
+
+.movieList .movieList-carousel .nav-tabs .nav-link.active {
+  color: #fa5238;
+  font-size: 24px;
+  cursor: default;
+}
+
+.movieList #myTabContent {
+  padding-top: 30px;
+}
 /*# sourceMappingURL=main.css.map */

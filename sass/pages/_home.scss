@@ -329,3 +329,39 @@
         }
     }
 }
+
+// MOVIELITS
+.movieList{
+    .movieList-carousel{
+        .nav-tabs {
+            border-bottom: none;
+            margin-bottom: $mg-3;
+            margin-top: 60px;
+    
+            .nav-link {
+                border: none;
+                background-color: transparent;
+                @include styleText($color-black-0, $fs-9, $fw-normal);
+                line-height: 24px;
+                height: 24px;
+                font-family: $font-SFMedium;
+                display: block;
+                transition: all 0.2s;
+    
+                &:hover {
+                    font-size: 24px;
+                }  
+            }
+    
+            .nav-link.active {
+                color: #fa5238;
+                font-size: 24px;
+                cursor: default;
+            }
+        }
+    }
+    
+    #myTabContent{
+        padding-top:$pd-5;
+    }
+}
