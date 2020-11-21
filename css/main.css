@@ -315,6 +315,122 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   line-height: 0.5;
 }
 
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  width: 100%;
+  /* override owl carousel library*/
+}
+
+.carousel .carousel__item {
+  width: 100%;
+}
+
+.carousel .carousel__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 560px;
+}
+
+.carousel .carousel__itemIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel .carousel__itemIcon i {
+  font-size: 25px;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  padding: 25px 25px 25px 29px;
+  font-weight: bold;
+}
+
+.carousel .owl-carousel .animated {
+  animation-duration: 2000ms;
+  animation-fill-mode: both;
+}
+
+.carousel .owl-theme .owl-dots {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel .owl-theme .owl-dots span {
+  background: #9b9b9b;
+  width: 13px;
+  height: 13px;
+}
+
+.carousel .owl-theme .owl-dot.active span {
+  background: #ff0000;
+}
+
+.carousel .carousel__prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel .carousel__prev img {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel__next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel .carousel__next img {
+  width: 40px;
+  height: 40px;
+}
+
+.movieList .movieList-carousel-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  list-style: none;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title {
+  padding: 5px;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title a {
+  text-decoration: none;
+  font-family: "SF Medium";
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  height: 24px;
+  transition: all 0.2s;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title:hover a {
+  color: #000;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title.active a {
+  color: #fa5238;
+  font-size: 20px;
+  font-weight: normal;
+}
+
 .news #homeNews {
   padding-top: 120px;
 }
@@ -517,121 +633,5 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   display: block;
   width: 100%;
   border-radius: 20px;
-}
-
-/* CAROUSEL */
-.carousel {
-  position: relative;
-  width: 100%;
-  /* override owl carousel library*/
-}
-
-.carousel .carousel__item {
-  width: 100%;
-}
-
-.carousel .carousel__item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 560px;
-}
-
-.carousel .carousel__itemIcon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.carousel .carousel__itemIcon i {
-  font-size: 25px;
-  color: #fff;
-  border: solid 1px #fff;
-  border-radius: 50%;
-  padding: 25px 25px 25px 29px;
-  font-weight: bold;
-}
-
-.carousel .owl-carousel .animated {
-  animation-duration: 2000ms;
-  animation-fill-mode: both;
-}
-
-.carousel .owl-theme .owl-dots {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.carousel .owl-theme .owl-dots span {
-  background: #9b9b9b;
-  width: 13px;
-  height: 13px;
-}
-
-.carousel .owl-theme .owl-dot.active span {
-  background: #ff0000;
-}
-
-.carousel .carousel__prev {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.carousel .carousel__prev img {
-  width: 40px;
-  height: 40px;
-}
-
-.carousel .carousel__next {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.carousel .carousel__next img {
-  width: 40px;
-  height: 40px;
-}
-
-.movieList .movieList-carousel-title {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 10px;
-  list-style: none;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title {
-  padding: 5px;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title a {
-  text-decoration: none;
-  font-family: "SF Medium";
-  color: #000;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 24px;
-  height: 24px;
-  transition: all 0.2s;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title:hover a {
-  color: #000;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title.active a {
-  color: #fa5238;
-  font-size: 20px;
-  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */
