@@ -52,6 +52,33 @@ body {
   clear: both;
 }
 
+.viewMore {
+  font-size: 14px;
+  color: #949494;
+  font-family: "SF Regular";
+  border: 1px solid #949494;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  padding: 7px 25px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: all 0.2s;
+}
+
+.viewMore:hover {
+  color: #fff;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+}
+
+.viewMore:focus {
+  outline: none;
+}
+
 header {
   font-family: "SF Regular";
   position: fixed;
@@ -273,6 +300,147 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   font-size: 12px;
   font-weight: normal;
   line-height: 0.5;
+}
+
+.news #homeNews {
+  padding-top: 120px;
+}
+
+.news #homeNews .nav-tabs {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.news #homeNews .nav-tabs .nav-link {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  height: 24px;
+  font-family: "SF Medium";
+  display: block;
+  transition: all 0.2s;
+}
+
+.news #homeNews .nav-tabs .nav-link:hover {
+  font-size: 24px;
+}
+
+.news #homeNews .nav-tabs .nav-link.active {
+  color: #fa5238;
+  font-size: 24px;
+  cursor: default;
+}
+
+.news #homeNews #myNewsContent {
+  padding-top: 30px;
+}
+
+.news #homeNews #myNewsContent .news__col {
+  margin-bottom: 20px;
+  padding: 0 7px;
+}
+
+.news #homeNews #myNewsContent .news__col .news__image {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.news #homeNews #myNewsContent .news__col .news__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.news #homeNews #myNewsContent .news__col .news__title {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.news #homeNews #myNewsContent .news__col .news__title p {
+  line-height: 20px;
+  font-family: "SF Medium";
+  font-weight: normal;
+  height: 42px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.news #homeNews #myNewsContent .news__col .news__title:hover {
+  color: #fa5238;
+}
+
+.news #homeNews #myNewsContent .news__col .news__description {
+  text-align: justify;
+  font-size: 13px;
+  color: #4a4a4a;
+  font-family: "SF Regular";
+  padding: 0 5px 0 0;
+  line-height: 19px;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.news #homeNews #myNewsContent .news__col .news__icons .wrapIcon {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.news #homeNews #myNewsContent .news__col .news__icons .wrapIcon a {
+  text-decoration: none;
+}
+
+.news #homeNews #myNewsContent .news__col .news__icons .wrapIcon a img {
+  margin-right: 10px;
+  margin-top: 2px;
+  width: 18px;
+  transition: all 0.2s;
+}
+
+.news #homeNews #myNewsContent .news__col .news__icons .wrapIcon a p {
+  display: inline-block;
+  color: #bbb;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.news #homeNews #myNewsContent .news__col .news__icons .wrapIcon a:hover img {
+  transform: scale(1.1);
+}
+
+.news #homeNews #myNewsContent .news__small {
+  margin-bottom: 20px;
+}
+
+.news #homeNews #myNewsContent .news__small .news__image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+
+.news #homeNews #myNewsContent .news__small .news__title p {
+  opacity: 0.7;
+  font-family: "SF Regular";
+}
+
+.news #homeNews #myNewsContent .news__col:nth-child(1),
+.news #homeNews #myNewsContent .news__col:nth-child(2) {
+  width: 50%;
+}
+
+.news #homeNews #myNewsContent .news__col:nth-child(3),
+.news #homeNews #myNewsContent .news__col:nth-child(4),
+.news #homeNews #myNewsContent .news__col:nth-child(5) {
+  width: calc(100%/3);
+}
+
+.news #homeNews #myNewsContent .SeeMoreNews {
+  width: 100%;
+  margin-bottom: 35px;
 }
 
 /* CAROUSEL */

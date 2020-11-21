@@ -11,10 +11,12 @@
 
 
 // components
+@import './components/button';
 
 // layout
 @import './layout/header';
 @import './layout/footer';
+@import './layout/news';
 
 // page
 @import './pages/home';
