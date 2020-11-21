@@ -356,4 +356,38 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   width: 40px;
   height: 40px;
 }
+
+.movieList .movieList-carousel-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  list-style: none;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title {
+  padding: 5px;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title a {
+  text-decoration: none;
+  font-family: "SF Medium";
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  height: 24px;
+  transition: all 0.2s;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title:hover a {
+  color: #000;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.movieList .movieList-carousel-title .movieList-text-title.active a {
+  color: #fa5238;
+  font-size: 20px;
+  font-weight: normal;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,12 @@
-
 /* CAROUSEL */
-.carousel{
+.carousel {
     position: relative;
     width: 100%;
 
-    .carousel__item{
+    .carousel__item {
         width: 100%;
 
-        img{
+        img {
             display: block;
             width: 100%;
             height: 100%;
@@ -15,7 +14,7 @@
         }
     }
 
-    .carousel__itemIcon{
+    .carousel__itemIcon {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -32,23 +31,21 @@
     }
 
     /* override owl carousel library*/
-    .owl-carousel { 
-
+    .owl-carousel {
         .animated {
             animation-duration: 2000ms;
-            animation-fill-mode: both; 
+            animation-fill-mode: both;
         }
     }
 
     .owl-theme {
-
         .owl-dots {
             position: absolute;
             top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
 
-            span{
+            span {
                 background: $color-gray-0;
                 width: 13px;
                 height: 13px;
@@ -60,10 +57,9 @@
                 background: $color-red-0;
             }
         }
-
     }
-       
-    .carousel__prev{
+
+    .carousel__prev {
         position: absolute;
         top: 50%;
         left: 5%;
@@ -76,17 +72,45 @@
         }
     }
 
-    .carousel__next{
+    .carousel__next {
         position: absolute;
         top: 50%;
         right: 5%;
         z-index: 1;
         cursor: pointer;
 
-        img{
+        img {
             width: 40px;
             height: 40px;
         }
     }
+}
 
+//  MOVELISt
+.movieList {
+    .movieList-carousel-title {
+        margin-top: $mg-3;
+        margin-bottom: $mg-3;
+        margin-right: $mg-1;
+        list-style: none;
+        .movieList-text-title {
+            padding: $pd-0;
+            a {
+                text-decoration: none;
+                @include fontText($font-SFMedium);
+                @include styleText($color-black-0, $fs-4 + 4, $fw-normal);
+                line-height: 24px;
+                height: 24px;
+                transition: all 0.2s;
+            }
+            &:hover a {
+                @include styleText($color-black-0, $fs-5, $fw-normal);
+            }
+        }
+        .movieList-text-title.active {
+            a {
+                @include styleText($color-red-1, $fs-4 + 4, $fw-normal);
+            }
+        }
+    }
 }
