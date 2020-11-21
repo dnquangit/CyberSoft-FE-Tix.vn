@@ -397,40 +397,6 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   height: 40px;
 }
 
-.movieList .movieList-carousel-title {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 10px;
-  list-style: none;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title {
-  padding: 5px;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title a {
-  text-decoration: none;
-  font-family: "SF Medium";
-  color: #000;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 24px;
-  height: 24px;
-  transition: all 0.2s;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title:hover a {
-  color: #000;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title.active a {
-  color: #fa5238;
-  font-size: 20px;
-  font-weight: normal;
-}
-
 .news #homeNews {
   padding-top: 120px;
 }
@@ -564,7 +530,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 .news #homeNews #myNewsContent .news__col:nth-child(3),
 .news #homeNews #myNewsContent .news__col:nth-child(4),
 .news #homeNews #myNewsContent .news__col:nth-child(5) {
-  width: calc(100%/3);
+  width: calc(100% / 3);
 }
 
 .news #homeNews #myNewsContent .SeeMoreNews {
@@ -666,5 +632,144 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 
 .movieList #myTabContent {
   padding-top: 30px;
+}
+
+.movieList #myTabContent #now-showing {
+  position: relative;
+  width: 100%;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content {
+  position: relative;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content img {
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text {
+  font-family: "SF Medium";
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  height: 42px;
+  max-height: 42px;
+  line-height: 22px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #fb4226;
+  border-radius: 4px;
+  padding: 0 5px;
+  min-width: 33px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content p {
+  color: #4a4a4a #000;
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 1 15px;
+  margin-top: 8px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-rating {
+  font-family: "SF Medium";
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  text-align: center;
+  width: 54px;
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  line-height: 1.1;
+  padding: 0 2px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-rating .list-start {
+  margin: 0 !important;
+  text-align: center;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-rating .list-start .smallStart {
+  display: inline-block;
+  max-width: 6px;
+  margin-bottom: 5px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-rating .text-rating {
+  margin-bottom: 5px;
+  margin-top: 4px;
+  transform: scaleY(1.2);
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .movie-type {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: 80%;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate(-5%, -12%);
+  max-width: 150px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under {
+  border: 1px solid #000;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(39, 35, 35, 0.8);
+}
+
+.movieList #myTabContent #now-showing .carousel__prev {
+  position: absolute;
+  top: 43%;
+  left: -8%;
+  width: 50px;
+  height: 54px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.movieList #myTabContent #now-showing .carousel__prev img {
+  height: 100%;
+}
+
+.movieList #myTabContent #now-showing .carousel__next {
+  position: absolute;
+  top: 43%;
+  right: -8%;
+  width: 50px;
+  height: 54px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.movieList #myTabContent #now-showing .carousel__next img {
+  height: 100%;
+}
+
+.movieList #myTabContent #now-showing .owl-dots {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
