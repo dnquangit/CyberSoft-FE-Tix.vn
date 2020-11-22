@@ -431,6 +431,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   font-weight: normal;
 }
 
+/*================== NEWS ==================*/
 .news #homeNews {
   padding-top: 120px;
 }
@@ -572,6 +573,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   margin-bottom: 35px;
 }
 
+/*================== BANNER ==================*/
 .banner {
   background-image: url(../assets/img/img-banner/backapp.jpg);
   padding: 120px 0 80px 0;
