@@ -118,10 +118,10 @@
 /*================== NEWS ==================*/
 .news {
     #homeNews {
-        // background-image: url(../assets/img/img-news/back-news.png);
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        // background-position: center;
+        background-image: url(../assets/img/img-news/back-news.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
         padding-top: 120px;
 
         .nav-tabs {
@@ -129,38 +129,37 @@
             margin-bottom: 0;
 
             .nav-link {
+                @include setHeight($line-height-1, $height-0);
                 border: none;
                 background-color: transparent;
                 @include styleText($color-black-0, $fs-9, $fw-normal);
-                line-height: 24px;
-                height: 24px;
-                font-family: $font-SFMedium;
+                @include fontText($font-SFMedium);
                 display: block;
                 transition: all 0.2s;
 
                 &:hover {
-                    font-size: 24px;
-                }  
+                    font-size: $fs-5;
+                }
             }
 
             .nav-link.active {
-                color: #fa5238;
-                font-size: 24px;
+                color: $color-red-1;
+                font-size: $fs-5;
                 cursor: default;
             }
         }
 
         #myNewsContent {
-            padding-top: 30px;
+            padding-top: $pd-5;
 
             .news__col {
-                margin-bottom: 20px;
+                margin-bottom: $mg-2;
                 padding: 0 7px;
-                
+
                 .news__image {
-                    margin-bottom: 10px;
+                    margin-bottom: $mg-1;
                     overflow: hidden;
-                    
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -174,54 +173,52 @@
                     transition: all 0.2s;
 
                     p {
-                        line-height: 20px;
-                        font-family: $font-SFMedium;
+                        @include setHeight($line-height-2, $height-1 + 2);
+                        @include fontText($font-SFMedium);
                         font-weight: $fw-normal;
-                        height: 42px;
-                        font-size: 16px;
-                        margin-bottom: 5px;
+                        font-size: $fs-4;
+                        margin-bottom: $mg-0;
+                        overflow: hidden;
                     }
 
                     &:hover {
-                        color: #fa5238;
+                        color: $color-red-1;
                     }
                 }
 
                 .news__description {
+                    @include setHeight($line-height-2 - 1, $height-2);
                     text-align: justify;
-                    font-size: 13px;
-                    color: #4a4a4a;
-                    font-family: $font-SFRegular;
-                    padding: 0 5px 0 0;
-                    line-height: 19px;
-                    height: 55px;
-                    margin-bottom: 15px;
+                    font-size: $fs-2;
+                    color: $color-gray-1;
+                    @include fontText($font-SFRegular);
+                    padding: 0 $pd-0 0 0;
+                    margin-bottom: $mg-4;
+                    overflow: hidden;
                 }
 
                 .news__icons {
-
                     .wrapIcon {
                         display: inline-block;
-                        margin-right: 25px;
+                        margin-right: $mg-5;
 
                         a {
                             text-decoration: none;
 
                             img {
-                                margin-right: 10px;
+                                margin-right: $mg-1;
                                 margin-top: 2px;
                                 width: 18px;
-                                transition: all 0.2s; 
+                                transition: all 0.2s;
                             }
 
                             p {
                                 display: inline-block;
-                                color: #bbb;
-                                font-size: 12px;
+                                @include styleText($color-gray-4, $fs-1, $fw-normal);
                                 line-height: 1;
                             }
 
-                            &:hover img{
+                            &:hover img {
                                 transform: scale(1.1);
                             }
                         }
@@ -230,19 +227,19 @@
             }
 
             .news__small {
-                margin-bottom: 20px;
+                margin-bottom: $mg-2;
 
                 .news__image {
                     width: 50px;
                     height: 50px;
-                    margin-right: 10px;
+                    margin-right: $mg-1;
                     float: left;
                 }
 
                 .news__title {
                     p {
                         opacity: 0.7;
-                        font-family: $font-SFRegular;
+                        @include fontText($font-SFRegular);
                     }
                 }
             }
@@ -255,7 +252,7 @@
             .news__col:nth-child(3),
             .news__col:nth-child(4),
             .news__col:nth-child(5) {
-                width: calc(100%/3);
+                width: calc(100% / 3);
             }
 
             .SeeMoreNews {
@@ -266,6 +263,56 @@
     }
 }
 
+//------ responsive news
+@include responsive('small') {
+    .news {
+        #homeNews {
+            #myNewsContent {
+                .news__col {
+                    width: 100% !important;
+                    padding: 0 10px;
+                    margin-bottom: 15px;
+
+                    .news__title {
+                        p {
+                            height: auto;
+                        }
+                    }
+
+                    .news__description {
+                        height: auto;
+                    }
+                }
+
+                .news__small {
+                    margin-bottom: $mg-2 + 5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .news {
+        #homeNews {
+            .nav-tabs {
+                .nav-link {
+                    @include styleText($color-black-0, $fs-4, $fw-normal);
+                    
+                    &:hover {
+                        font-size: $fs-4 + 2;
+                    }
+                }
+
+                .nav-link.active {
+                    font-size: $fs-4 + 2;
+                }
+            }
+        }
+    }
+}
+
+
 /*================== BANNER ==================*/
 .banner {
     background-image: url(../assets/img/img-banner/backapp.jpg);
@@ -274,27 +321,27 @@
 
     .left {
         padding-top: 60px;
-        color: #fff;
+        color: $color-white-0;
 
         .left__text {
-            font-weight: 700;
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-weight: $fw-bold-0;
+            font-size: $fs-7;
+            margin-bottom: $mg-1;
         }
 
         .left__description {
-            margin-bottom: 10px;
+            margin-bottom: $mg-1;
         }
 
         .left__apps {
-            padding-top: 10px;
-            margin-bottom: 10px;
-            font-size: 14px;
+            padding-top: $pd-1;
+            margin-bottom: $mg-1;
+            font-size: $fs-3;
 
             a {
                 text-decoration: none;
-                color: #fff;
-                border-bottom: 1px solid #fff;
+                color: $color-white-0;
+                border-bottom: 1px solid $color-white-0;
             }
         }
     }
@@ -316,17 +363,200 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding-top: 2%;
+            padding-top: 1.7%;
             padding-left: 29.3%;
             padding-right: 29.3%;
             padding-bottom: 0%;
+
+            .owl-dots {
+                display: none;
+            }
+
+            .owl-carousel .owl-stage-outer {
+                border-radius: 23px;
+            }
 
             .banner__carouselItem {
                 img {
                     display: block;
                     width: 100%;
-                    border-radius: 20px;
+                    // border-radius: 20px;
                 }
+            }
+        }
+    }
+}
+
+//------ responsive banner
+.banner {
+    @include responsive("large") {
+        padding-top: 10px;
+
+        .left {
+            text-align: center;
+
+            .left__text {
+                font-size: 25px;
+            }
+
+            .left__description {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+// MOVIELITS
+.movieList {
+    .movieList-carousel {
+        .nav-tabs {
+            border-bottom: none;
+            margin-bottom: $mg-3;
+            margin-top: 60px;
+
+            .nav-link {
+                border: none;
+                background-color: transparent;
+                @include styleText($color-black-0, $fs-9, $fw-normal);
+                line-height: $line-height-1;
+                height: 24px;
+                font-family: $font-SFMedium;
+                display: block;
+                transition: all 0.2s;
+
+                &:hover {
+                    font-size: 24px;
+                }
+            }
+
+            .nav-link.active {
+                color: #fa5238;
+                font-size: 24px;
+                cursor: default;
+            }
+        }
+    }
+    #myTabContent {
+        padding-top: $pd-5;
+        #now-showing {
+            position: relative;
+            width: 100%;
+            .movieList-carousel-items {
+                .item-carousel {
+                    .item-content {
+                        position: relative;
+                        img {
+                            margin-bottom: $mg-1;
+                            border-radius: 4px;
+                        }
+                        .item-text {
+                            @include fontText($font-SFMedium);
+                            @include styleText($color-black-0, $fs-4, $fw-normal);
+                            height: 42px;
+                            max-height: 42px;
+                            line-height: $line-height-0 - 3;
+                            margin-bottom: 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            span {
+                                @include styleText($color-white-0, $fs-3, $fw-normal);
+                                background-color: #fb4226;
+                                border-radius: 4px;
+                                padding: 0 5px;
+                                min-width: 33px;
+                                text-align: center;
+                                display: inline-block;
+                                margin-right: $mg-1 - 2;
+                            }
+                        }
+                        p {
+                            @include styleText($color-gray-1$color-black-0, $fs-2, $fw-normal);
+                            margin-bottom: 1$mg-1 + 5;
+                            margin-top: $mg-1 - 2;
+                        }
+                        .item-rating {
+                            @include fontText($font-SFMedium);
+                            @include styleText($color-white-0, $fs-4, $fw-normal);
+                            position: absolute;
+                            top: 11px;
+                            right: 11px;
+                            text-align: center;
+                            width: 54px;
+                            background-color: $bg-color-blue-8;
+                            border: 1px solid #1f2e46;
+                            border-radius: 4px;
+                            line-height: 1.1;
+                            padding: 0 2px;
+                            .list-start {
+                                margin: 0 !important;
+                                text-align: center;
+                                display: flex;
+                                justify-content: center;
+                                .smallStart {
+                                    max-width: 8px;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                            .text-rating {
+                                margin-bottom: 5px;
+                                margin-top: 4px;
+                                transform: scaleY(1.2);
+                                @include styleText($color-white-0, $fs-4, $fw-normal);
+                            }
+                        }
+                        .movie-type {
+                            position: absolute;
+                            top: -20px;
+                            left: -10px;
+                            width: 80%;
+                            pointer-events: none;
+                            overflow: hidden;
+                            transform: translate(-5%, -12%);
+                            max-width: 150px;
+                        }
+                        .display-under {
+                            border: 1px solid $color-black-0;
+                            position: absolute;
+                            border-radius: 4px;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: rgba(39, 35, 35, 0.8);
+                        }
+                    }
+                }
+            }
+            .carousel__prev {
+                position: absolute;
+                top: 43%;
+                left: -8%;
+                width: 50px;
+                height: 54px;
+                z-index: 2;
+                opacity: 0.5;
+                img {
+                    height: 100%;
+                }
+            }
+            .carousel__next {
+                position: absolute;
+                top: 43%;
+                right: -8%;
+                width: 50px;
+                height: 54px;
+                z-index: 2;
+                opacity: 0.5;
+                img {
+                    height: 100%;
+                }
+            }
+            .owl-dots {
+                display: none;
             }
         }
     }

@@ -33,85 +33,91 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="col-lg-4 navbar-brand logo" href="#">
-                <img src="./assets/img/img-header/web-logo.png" alt="logo">
-            </a>
+        
+        <div class="logo">
+            <img class="logo" src="./assets/img/img-header/web-logo.png" alt="logo">      
+        </div>
+          
+        <div class="header__center d-none d-xl-flex">
+            <a href="#">Lịch chiếu</a>
+            <a href="#">Cụm rạp</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Ứng dụng</a>
+        </div>
 
-            <ul class="col-lg-4 navbar-nav header__center">
-                <li><a href="#">Lịch chiếu</a></li>
-                <li><a href="#">Cụm rạp</a></li>
-                <li><a href="#">Tin tức</a></li>
-                <li> <a href="#">Ứng dụng</a></li>
-            </ul>
+        <div class="header__right d-none d-xl-flex">
 
-            <div class="col-lg-4 navbar-nav justify-content-end header__right ">
-                <div class="header__account">
-                    <i class="fas fa-user-circle"></i>
-                    <a href="#"> Đăng nhập </a>
-                </div>
-                <div class="header__location">
-                    <i class="header__iconMap fas fa-map-marker-alt"></i>
-                    <a class="header__dropdownSelected" href="#"> Hồ Chí Minh </a>
-                    <a class="header__drowdownBtn" href="#"><i class="fas fa-chevron-down"></i></a>
-                    <div class="header__dropdownMenu">
-                        <a class="header__dropdownItem">Hồ Chí Minh</a>
-                        <a class="header__dropdownItem">Hà Nội</a>
-                        <a class="header__dropdownItem">Đà Nẵng</a>
-                        <a class="header__dropdownItem">Hải Phòng</a>
-                        <a class="header__dropdownItem">Biên Hoà</a>
-                        <a class="header__dropdownItem">Nha Trang</a>
-                        <a class="header__dropdownItem">Bình Dương</a>
-                        <a class="header__dropdownItem">Phan Thiết</a>
-                        <a class="header__dropdownItem">Hạ Long</a>
-                        <a class="header__dropdownItem">Cần Thơ</a>
-                        <a class="header__dropdownItem">Vũng Tàu</a>
-                        <a class="header__dropdownItem">Quy Nhơn</a>
-                        <a class="header__dropdownItem">Huế</a>
-                        <a class="header__dropdownItem">Long Xuyên</a>
-                        <a class="header__dropdownItem">Thái Nguyên</a>
-                        <a class="header__dropdownItem">Buôn Ma Thuột</a>
-                        <a class="header__dropdownItem">Bắc Giang</a>
-                        <a class="header__dropdownItem">Bến Tre</a>
-                        <a class="header__dropdownItem">Việt Trì</a>
-                        <a class="header__dropdownItem">Ninh Bình</a>
-                        <a class="header__dropdownItem">Thái Bình</a>
-                        <a class="header__dropdownItem">Vinh</a>
-                        <a class="header__dropdownItem">Bảo Lộc</a>
-                        <a class="header__dropdownItem">Đà Lạt</a>
-                        <a class="header__dropdownItem">Trà Vinh</a>
-                        <a class="header__dropdownItem">Yên Bái</a>
-                        <a class="header__dropdownItem">Kiên Giang</a>
-                        <a class="header__dropdownItem">Vĩnh Long</a>
-                        <a class="header__dropdownItem">Cà Mau</a>
-                        <a class="header__dropdownItem">Hậu Giang</a>
-                        <a class="header__dropdownItem">Tây Ninh</a>
-                        <a class="header__dropdownItem">Tuyên Quang</a>
-                        <a class="header__dropdownItem">Thanh Hóa</a>
-                        <a class="header__dropdownItem">Nam Định</a>
-                        <a class="header__dropdownItem">Hải Dương</a>
-                        <a class="header__dropdownItem">Gia Lai</a>
-                        <a class="header__dropdownItem">Hà Tĩnh</a>
-                        <a class="header__dropdownItem">Phú Yên</a>
-                        <a class="header__dropdownItem">Bạc Liêu</a>
-                        <a class="header__dropdownItem">Long An</a>
-                        <a class="header__dropdownItem">Đồng Hới</a>
-                        <a class="header__dropdownItem">Hà Nam</a>
-                        <a class="header__dropdownItem">Bắc Ninh</a>
-                        <a class="header__dropdownItem">Quảng Trị</a>
-                        <a class="header__dropdownItem">Kon Tum</a>
-                        <a class="header__dropdownItem">Sóc Trăng</a>
-                        <a class="header__dropdownItem">Sơn La</a>
-                        <a class="header__dropdownItem">Lạng Sơn</a>
-                        <a class="header__dropdownItem">Quảng Ngãi</a>
-                        <a class="header__dropdownItem">Đồng Tháp</a>
-                        <a class="header__dropdownItem">Hưng Yên</a>
-                    </div>
+            <div class="header__account">
+                <i class="fas fa-user-circle"></i>
+                <a href="#"> Đăng nhập </a>
+            </div>
+
+            <div class="header__location">
+                <i class="header__iconMap fas fa-map-marker-alt"></i>
+                <a class="header__dropdownSelected" href="#"> Hồ Chí Minh </a>
+                <a class="header__drowdownBtn" href="#"><i class="fas fa-chevron-down"></i></a>
+                <div class="header__dropdownMenu">
+                    <a class="header__dropdownItem">Hồ Chí Minh</a>
+                    <a class="header__dropdownItem">Hà Nội</a>
+                    <a class="header__dropdownItem">Đà Nẵng</a>
+                    <a class="header__dropdownItem">Hải Phòng</a>
+                    <a class="header__dropdownItem">Biên Hoà</a>
+                    <a class="header__dropdownItem">Nha Trang</a>
+                    <a class="header__dropdownItem">Bình Dương</a>
+                    <a class="header__dropdownItem">Phan Thiết</a>
+                    <a class="header__dropdownItem">Hạ Long</a>
+                    <a class="header__dropdownItem">Cần Thơ</a>
+                    <a class="header__dropdownItem">Vũng Tàu</a>
+                    <a class="header__dropdownItem">Quy Nhơn</a>
+                    <a class="header__dropdownItem">Huế</a>
+                    <a class="header__dropdownItem">Long Xuyên</a>
+                    <a class="header__dropdownItem">Thái Nguyên</a>
+                    <a class="header__dropdownItem">Buôn Ma Thuột</a>
+                    <a class="header__dropdownItem">Bắc Giang</a>
+                    <a class="header__dropdownItem">Bến Tre</a>
+                    <a class="header__dropdownItem">Việt Trì</a>
+                    <a class="header__dropdownItem">Ninh Bình</a>
+                    <a class="header__dropdownItem">Thái Bình</a>
+                    <a class="header__dropdownItem">Vinh</a>
+                    <a class="header__dropdownItem">Bảo Lộc</a>
+                    <a class="header__dropdownItem">Đà Lạt</a>
+                    <a class="header__dropdownItem">Trà Vinh</a>
+                    <a class="header__dropdownItem">Yên Bái</a>
+                    <a class="header__dropdownItem">Kiên Giang</a>
+                    <a class="header__dropdownItem">Vĩnh Long</a>
+                    <a class="header__dropdownItem">Cà Mau</a>
+                    <a class="header__dropdownItem">Hậu Giang</a>
+                    <a class="header__dropdownItem">Tây Ninh</a>
+                    <a class="header__dropdownItem">Tuyên Quang</a>
+                    <a class="header__dropdownItem">Thanh Hóa</a>
+                    <a class="header__dropdownItem">Nam Định</a>
+                    <a class="header__dropdownItem">Hải Dương</a>
+                    <a class="header__dropdownItem">Gia Lai</a>
+                    <a class="header__dropdownItem">Hà Tĩnh</a>
+                    <a class="header__dropdownItem">Phú Yên</a>
+                    <a class="header__dropdownItem">Bạc Liêu</a>
+                    <a class="header__dropdownItem">Long An</a>
+                    <a class="header__dropdownItem">Đồng Hới</a>
+                    <a class="header__dropdownItem">Hà Nam</a>
+                    <a class="header__dropdownItem">Bắc Ninh</a>
+                    <a class="header__dropdownItem">Quảng Trị</a>
+                    <a class="header__dropdownItem">Kon Tum</a>
+                    <a class="header__dropdownItem">Sóc Trăng</a>
+                    <a class="header__dropdownItem">Sơn La</a>
+                    <a class="header__dropdownItem">Lạng Sơn</a>
+                    <a class="header__dropdownItem">Quảng Ngãi</a>
+                    <a class="header__dropdownItem">Đồng Tháp</a>
+                    <a class="header__dropdownItem">Hưng Yên</a>
                 </div>
             </div>
-        </nav>
+
+        </div>
+        <div class="header__right--mobile d-block d-xl-none">
+            <img src="./assets/img/img-icons/menu-options.png" alt="menu" data-toggle="modal" data-target="#menuHeaderMobile">
+        </div>
     </header>
-    <section class="carousel">
+    
+    <section class="carousel d-none d-xl-block">
         <div class="owl-carousel owl-theme">
             <div class="carousel__item">
                 <img src="./assets/img/img-carousel/dong-gia-1k-ve-khi-mua-ve-qua-tix-1.jpg" alt="">
@@ -149,129 +155,675 @@
 
     <section class="container-fluild main-container-940 movieList">
         <div class="movieList-carousel">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    <a class="nav-link active" id="now-showing-tab" data-toggle="tab" href="#now-showing" role="tab"
+                        aria-controls="now-showing" aria-selected="true">Đang Chiếu</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="coming-soon-tab" data-toggle="tab" href="#commin-soon" role="tab"
+                        aria-controls="commin-soon" aria-selected="false">Sắp Chiếu</a>
                 </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="now-showing" role="tabpanel"
+                    aria-labelledby="now-showing-tab">
                     <div class="owl-carousel owl-theme movieList-carousel-items">
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
+                        <div class="item item-carousel">
+                            <div class="row ">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                        <div class="display-under">
+
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/cuc-no-hoa-cuc-cung.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/gia-dinh-chan-to-phieu-luu-ky.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-3">
+                            <div class="row ">
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item-carousel">
+                            <div class="row ">
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__prev"><img class="img-fluid" src="./assets/img/img-carousel/back-session.png"
+                            alt="">
+                    </div>
+                    <div class="carousel__next"><img class="img-fluid" src="./assets/img/img-carousel/next-session.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="coming-soon" role="tabpanel" aria-labelledby="coming-soon-tab">
+                    <div class="owl-carousel owl-theme movieList-carousel-items">
+                        <div class="item item-carousel">
+                            <div class="row ">
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item-carousel">
+                            <div class="row ">
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-4">
+                                    <div class="item-content">
+                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
+                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
+                                        </p>
+                                        <p>100 phút</p>
+                                        <span class="item-rating">
+                                            <p class="text-rating">9.2</p>
+                                            <p class="list-start">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <div class="movie-type">
+                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-3 item-content">
                                     <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
+                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
                                     <p>100 phút</p>
                                 </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/cuc-no-hoa-cuc-cung.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
+                                <div class="col-3 item-content">
+                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
+                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
                                     <p>100 phút</p>
                                 </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/gia-dinh-chan-to-phieu-luu-ky.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
+                                <div class="col-3 item-content">
+                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
+                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
                                     <p>100 phút</p>
                                 </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
+                                <div class="col-3 item-content">
+                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
+                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
                                     <p>100 phút</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel__prev"><img src="./assets/img/img-carousel/back-session.png" alt=""></div>
-                    <div class="carousel__next"><img src="./assets/img/img-carousel/next-session.png" alt=""></div>
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="owl-carousel owl-theme movieList-carousel-items">
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/ti-hon-hau-dau.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/cuc-no-hoa-cuc-cung.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/gia-dinh-chan-to-phieu-luu-ky.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/cuc-no-hoa-cuc-cung.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/gia-dinh-chan-to-phieu-luu-ky.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3">
-                                    <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                    <p><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="carousel__prev"><img class="img-fluid" src="./assets/img/img-carousel/back-session.png"
+                            alt="">
                     </div>
-                    <div class="carousel__prev"><img src="./assets/img/img-carousel/back-session.png" alt=""></div>
-                    <div class="carousel__next"><img src="./assets/img/img-carousel/next-session.png" alt=""></div>
+                    <div class="carousel__next"><img class="img-fluid" src="./assets/img/img-carousel/next-session.png"
+                            alt="">
+                    </div>
                 </div>
-              </div>
-            <!-- <ul class="row justify-content-center movieList-carousel-title">
-                <li class="movieList-text-title active">
-                    <a href="#">Đang Chiếu</a>
-                </li>
-                <li class="movieList-text-title">
-                    <a href="#">Sắp Chiếu</a>
-                </li>
-            </ul> -->
-            
+            </div>
         </div>
         <div class="movieListp-table">
             <div class="inemaComplex"></div>
@@ -306,16 +858,12 @@
             </div>
         </div>
     </section>
-
-    <section class="showTime">
-
-
-    </section>
     <section class="news">
         <div class="container-fluid main-container-940" id="homeNews">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#dienanh24h" role="tab">Điện Ảnh 24h</a>
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#dienanh24h" role="tab">Điện Ảnh
+                        24h</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#review" role="tab">Review</a>
@@ -327,16 +875,18 @@
             <div class="tab-content" id="myNewsContent">
                 <div class="tab-pane fade show active" id="dienanh24h" role="tabpanel">
                     <div class="row">
-                        <div class="col-xs-12 news__col">
+                        <div class="news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg" alt="">
+                                <a href="https://tix.vn/goc-dien-anh/7960-boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/goc-dien-anh/7960-boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh" class="news__title">
                                 <p>“Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành</p>
                             </a>
-                            <p class="news__description">Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo độc-lạ-chill nhất từ trước đến giờ sẽ chính thức khai trương tại 360 Giải Phóng!
+                            <p class="news__description">Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo
+                                độc-lạ-chill nhất từ trước đến giờ sẽ chính thức khai trương tại 360 Giải Phóng!
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -353,16 +903,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 news__col">
+                        <div class="news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png" alt="">
+                                <a href="https://tix.vn/goc-dien-anh/7957-tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/goc-dien-anh/7957-tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu" class="news__title">
                                 <p>Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần công chiếu </p>
                             </a>
-                            <p class="news__description">Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn ngôi sao “bạc tỷ” của phim cũng lần đầu tiên hội tụ đầy đủ trong một khung hình để ăn mừng thành tích ấn tượng 
+                            <p class="news__description">Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn ngôi sao “bạc tỷ” của phim cũng lần đầu tiên hội tụ đầy đủ trong một khung hình để ăn mừng thành tích ấn tượng của tác phẩm.
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -379,16 +930,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 news__col">
+                        <div class="news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/10/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041597587981.jpg" alt="">
+                                <a href="https://tix.vn/goc-dien-anh/7956-ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/10/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041597587981.jpg"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
-                                <p>NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ TRANG...</p>
+                            <a href="https://tix.vn/goc-dien-anh/7956-ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman" class="news__title">
+                                <p>NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ TRANG PHỤC CHO SIÊU ANH HÙNG ĐẦU TIÊN CỦA VIỆT NAM – VINAMAN</p>
                             </a>
-                            <p class="news__description">Chiều tối ngày 30-10-2020, Ngô Thanh Vân và Studio68 đã chính thức phát động cuộc thi thiết kế trang phục cho siêu anh hùng VINAMAN với tổng  
+                            <p class="news__description">Chiều tối ngày 30-10-2020, Ngô Thanh Vân và Studio68 đã chính thức phát động cuộc thi thiết kế trang phục cho siêu anh hùng VINAMAN với tổng giá trị giải thưởng lên đến 60 triệu đồng.
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -405,16 +957,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 news__col">
+                        <div class="news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/antebellum-4-ly-do-khong-the-bo-lo-sieu-pham-kinh-di-antebellum-bay-thuc-tai-kinh-hoang-16045678023913.png" alt="">
+                                <a href="https://tix.vn/goc-dien-anh/7953-antebellum-4-ly-do-khong-the-bo-lo-sieu-pham-kinh-di-antebellum-bay-thuc-tai-kinh-hoang">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/antebellum-4-ly-do-khong-the-bo-lo-sieu-pham-kinh-di-antebellum-bay-thuc-tai-kinh-hoang-16045678023913.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/goc-dien-anh/7953-antebellum-4-ly-do-khong-the-bo-lo-sieu-pham-kinh-di-antebellum-bay-thuc-tai-kinh-hoang" class="news__title">
                                 <p>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị Antebellum: Bẫy Thực...</p>
                             </a>
-                            <p class="news__description">Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất   
+                            <p class="news__description">Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của loạt tác phẩm ấn tượng “Get Out”, “Us” hay “BlacKkKlansman”, và còn nhiều lý do khác khiến người 
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -431,45 +984,49 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 news__col">
+                        <div class="news__col">
                             <div class="news__small news__smallOne">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/07/pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep-15937498464029.png" alt="">
+                                    <a href="https://tix.vn/goc-dien-anh/7952-ac-quy-doi-dau-soan-ngoi-peninsula-tro-thanh-phim-dung-dau-doanh-thu-tai-han-quoc-mua-dich">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/07/pee-nak-2-van-kiep-thien-thu-di-tu-khong-het-nghiep-15937498464029.png"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng...</p>
+                                <a href="https://tix.vn/goc-dien-anh/7952-ac-quy-doi-dau-soan-ngoi-peninsula-tro-thanh-phim-dung-dau-doanh-thu-tai-han-quoc-mua-dich" class="news__title">
+                                    <p> Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng đầu doanh thu tại Hàn Quốc mùa dịch</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallTwo">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/08/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png" alt="">
+                                    <a href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/08/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher...</p>
+                                <a href="https://tix.vn/goc-dien-anh/7951-da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan" class="news__title">
+                                    <p>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallThree">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/08/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png" alt="">
+                                    <a href="https://tix.vn/goc-dien-anh/7950-truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/08/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng...</p>
+                                <a href="https://tix.vn/goc-dien-anh/7950-truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han" class="news__title">
+                                    <p>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallFour">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/08/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="">
+                                    <a href="https://tix.vn/goc-dien-anh/7949-6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/08/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình...</p>
+                                <a href="https://tix.vn/goc-dien-anh/7949-6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood" class="news__title">
+                                    <p>6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám nhất Hollywood</p>
                                 </a>
                             </div>
                         </div>
@@ -482,11 +1039,12 @@
                     <div class="row">
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/08/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png" alt="">
+                                <a href="https://tix.vn/review/7947-review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/08/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/review/7947-review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket" class="news__title">
                                 <p>Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</p>
                             </a>
                             <p class="news__description">Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám
@@ -508,14 +1066,16 @@
                         </div>
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/08/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png" alt="">
+                                <a href="https://tix.vn/review/7946-review-dinh-thu-oan-khuat-ghost-of-war">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/08/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/review/7946-review-dinh-thu-oan-khuat-ghost-of-war" class="news__title">
                                 <p>Review: Dinh Thự Oan Khuất (Ghost Of War)</p>
                             </a>
-                            <p class="news__description">Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan Khuất vẫn chưa đủ để đem khán giả trở lại phòng vé!
+                            <p class="news__description">Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan
+                                Khuất vẫn chưa đủ để đem khán giả trở lại phòng vé!
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -534,14 +1094,15 @@
                         </div>
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/06/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="">
+                                <a href="https://tix.vn/review/7924-blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/06/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/review/7924-blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh" class="news__title">
                                 <p>‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh</p>
                             </a>
-                            <p class="news__description">Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn Spike Lee là một lát cắt nữa về nạn phân biệt chủng tộc - nỗi đau gây nhức   
+                            <p class="news__description">Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn Spike Lee là một lát cắt nữa về nạn phân biệt chủng tộc - nỗi đau gây nhức nhối nước Mỹ cho tới tận hôm nay.
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -560,14 +1121,15 @@
                         </div>
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/05/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png" alt="">
+                                <a href="https://tix.vn/review/7918-american-sniper-chinh-nghia-hay-phi-nghia">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/05/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/review/7918-american-sniper-chinh-nghia-hay-phi-nghia" class="news__title">
                                 <p>American Sniper - Chính nghĩa hay phi nghĩa?</p>
                             </a>
-                            <p class="news__description">American Sniper khắc họa một tay súng bắn tỉa “huyền thoại” của Hải quân Mỹ với 4 lần tham chiến ở Trung Đông. Câu chuyện phim chậm rãi đưa người    
+                            <p class="news__description">American Sniper khắc họa một tay súng bắn tỉa “huyền thoại” của Hải quân Mỹ với 4 lần tham chiến ở Trung Đông. Câu chuyện phim chậm rãi đưa người xem qua từng thời khắc khác nhau của Kyle, từ thửa nhỏ, thiếu niên, rồi gia nhập quân đội, rồi tham chiến. Từng khoảnh khắc bắt 
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -587,42 +1149,46 @@
                         <div class="col-xs-12 news__col">
                             <div class="news__small news__smallOne">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/05/review-spider-man-into-the-spider-vesre-15886520889426.png" alt="">
+                                    <a href="https://tix.vn/review/7894-review-spider-man-into-the-spider-vesre">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/05/review-spider-man-into-the-spider-vesre-15886520889426.png"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
+                                <a href="https://tix.vn/review/7894-review-spider-man-into-the-spider-vesre" class="news__title">
                                     <p>Review: Spider-Man: Into The Spider-Vesre </p>
                                 </a>
                             </div>
                             <div class="news__small news__smallTwo">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/03/covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011-15843496198482.jpg" alt="">
+                                    <a href="https://tix.vn/review/7886-covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/03/covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011-15843496198482.jpg"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
+                                <a href="https://tix.vn/review/7886-covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011" class="news__title">
                                     <p>COVID-19 là bản chính thức của MEV-1 phim contagion (2011)</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallThree">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/03/review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the-15840925506832.jpg" alt="">
+                                    <a href="https://tix.vn/review/7882-review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/03/review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the-15840925506832.jpg"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>[Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống chưa bao giờ ...</p>
+                                <a href="https://tix.vn/review/7882-review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the" class="news__title">
+                                    <p>[Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống chưa bao giờ lầy lội và hài hước đến thế</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallFour">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/03/review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant-15840731141389.jpg" alt="">
+                                    <a href="https://tix.vn/review/7881-review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/03/review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant-15840731141389.jpg"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>[Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ Siêu anh ...</p>
+                                <a href="https://tix.vn/review/7881-review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant" class="news__title">
+                                    <p>[Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ Siêu anh hùng Valiant</p>
                                 </a>
                             </div>
                         </div>
@@ -635,14 +1201,16 @@
                     <div class="row">
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/bhd-59k-ve-ca-tuan-16045659414321.jpg" alt="">
+                                <a href="https://tix.vn/khuyen-mai/7958-bhd-59k-ve-ca-tuan">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/bhd-59k-ve-ca-tuan-16045659414321.jpg"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/khuyen-mai/7958-bhd-59k-ve-ca-tuan" class="news__title">
                                 <p>BHD 59K/VÉ CẢ TUẦN !!!</p>
                             </a>
-                            <p class="news__description">Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé khi mua vé trên TIX hoặc Mục Vé Phim trên ZaloPay.
+                            <p class="news__description">Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá
+                                59k/vé khi mua vé trên TIX hoặc Mục Vé Phim trên ZaloPay.
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -661,14 +1229,16 @@
                         </div>
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/tix-1k-ve-ngai-chi-gia-ve-16045662877511.jpg" alt="">
+                                <a href="https://tix.vn/khuyen-mai/7955-tix-1k-ve-ngai-chi-gia-ve">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/11/tix-1k-ve-ngai-chi-gia-ve-16045662877511.jpg"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/khuyen-mai/7955-tix-1k-ve-ngai-chi-gia-ve" class="news__title">
                                 <p>TIX 1K/VÉ NGẠI CHI GIÁ VÉ</p>
                             </a>
-                            <p class="news__description">Đồng giá 1k/vé cả tuần tất cả các rạp trên TIX + Nhận thêm 02 voucher thanh toán ZaloPay thả ga
+                            <p class="news__description">Đồng giá 1k/vé cả tuần tất cả các rạp trên TIX + Nhận thêm 02
+                                voucher thanh toán ZaloPay thả ga
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -687,18 +1257,16 @@
                         </div>
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/09/dong-gia-1k-ve-khi-mua-ve-qua-tix-16010092946804.png" alt="">
+                                <a href="https://tix.vn/khuyen-mai/7954-dong-gia-1k-ve-khi-mua-ve-qua-tix">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/09/dong-gia-1k-ve-khi-mua-ve-qua-tix-16010092946804.png"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/khuyen-mai/7954-dong-gia-1k-ve-khi-mua-ve-qua-tix" class="news__title">
                                 <p>ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX </p>
                             </a>
-                            <p class="news__description">ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX 
- 
+                            <p class="news__description">ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX
                                 Hành trình tìm Ròm và Phúc chỉ với 1k cả tuần + nhận thêm 02 voucher khi đặt vé qua TIX.
-                               
-                                 
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -717,14 +1285,16 @@
                         </div>
                         <div class="col-xs-12 news__col">
                             <div class="news__image">
-                                <a href="#">
-                                    <img src="https://s3img.vcdn.vn/123phim/2020/07/bhd-star-ve-chi-59-000d-ca-tuan-15937622264546.jpg" alt="">
+                                <a href="https://tix.vn/khuyen-mai/7919-bhd-star-ve-chi-59-000d-ca-tuan">
+                                    <img src="https://s3img.vcdn.vn/123phim/2020/07/bhd-star-ve-chi-59-000d-ca-tuan-15937622264546.jpg"
+                                        alt="">
                                 </a>
                             </div>
-                            <a href="#" class="news__title">
+                            <a href="https://tix.vn/khuyen-mai/7919-bhd-star-ve-chi-59-000d-ca-tuan" class="news__title">
                                 <p>BHD STAR VÉ CHỈ 59.000Đ CẢ TUẦN!</p>
                             </a>
-                            <p class="news__description">Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé khi mua vé trên TIX và thanh toán bằng ZaloPay hoặc Mục Vé Phim trên ZaloPay.  
+                            <p class="news__description">Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá
+                                59k/vé khi mua vé trên TIX và thanh toán bằng ZaloPay hoặc Mục Vé Phim trên ZaloPay.
                             </p>
                             <div class="news__icons">
                                 <div class="wrapIcon like">
@@ -744,41 +1314,45 @@
                         <div class="col-xs-12 news__col">
                             <div class="news__small news__smallOne">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2020/05/beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon-15889408112010.png" alt="">
+                                    <a href="https://tix.vn/khuyen-mai/7908-beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon">
+                                        <img src="https://s3img.vcdn.vn/123phim/2020/05/beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon-15889408112010.png"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
+                                <a href="https://tix.vn/khuyen-mai/7908-beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon" class="news__title">
                                     <p>Beta Cineplex trở lại với hàng loạt ưu đãi lớn</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallTwo">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2019/11/123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai-15746757294099.jpg" alt="">
+                                    <a href="https://tix.vn/khuyen-mai/7806-123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/11/123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai-15746757294099.jpg"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>[123Phim] Thứ 6 Không Đen Tối -  Ưu đãi huỷ diệt 11k/vé Anh ...</p>
+                                <a href="https://tix.vn/khuyen-mai/7806-123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai" class="news__title">
+                                    <p>[123Phim] Thứ 6 Không Đen Tối -  Ưu đãi huỷ diệt 11k/vé Anh Trai Yêu Quái</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallThree">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2019/11/123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay-15729439018211.jpg" alt="">
+                                    <a href="https://tix.vn/khuyen-mai/7801-123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/11/123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay-15729439018211.jpg"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
-                                    <p>[123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp...</p>
+                                <a href="https://tix.vn/khuyen-mai/7801-123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay" class="news__title">
+                                    <p>[123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp Sư Mù: Ai Chết Giơ Tay</p>
                                 </a>
                             </div>
                             <div class="news__small news__smallFour">
                                 <div class="news__image">
-                                    <a href="#">
-                                        <img src="https://s3img.vcdn.vn/123phim/2019/10/mega-gs-mot-doa-hoa-thay-ngan-loi-yeu-15713106082164.jpg" alt="">
+                                    <a href="https://tix.vn/khuyen-mai/7792-mega-gs-mot-doa-hoa-thay-ngan-loi-yeu">
+                                        <img src="https://s3img.vcdn.vn/123phim/2019/10/mega-gs-mot-doa-hoa-thay-ngan-loi-yeu-15713106082164.jpg"
+                                            alt="">
                                     </a>
                                 </div>
-                                <a href="#" class="news__title">
+                                <a href="https://tix.vn/khuyen-mai/7792-mega-gs-mot-doa-hoa-thay-ngan-loi-yeu" class="news__title">
                                     <p>[Mega GS] Một đoá hoa thay ngàn lời yêu</p>
                                 </a>
                             </div>
@@ -794,21 +1368,22 @@
     <section class="banner">
         <div class="container-fluid main-container-940">
             <div class="row">
-                <div class="col-md-6 left">
+                <div class="col-lg-6 left">
                     <p class="left__text">Ứng dụng tiện lợi dành cho</p>
                     <p class="left__text">người yêu điện ảnh</p>
                     <br>
-                    <p class="left__description">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                    <p class="left__description">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi
+                        quà hấp dẫn.</p>
                     <br>
                     <button class="left__button">App miễn phí - Tải về ngay!</button>
                     <p class="left__apps">
                         TIX có hai phiên bản
-                        <a href="#">iOS</a>
+                        <a href="https://apps.apple.com/us/app/123phim-mua-ve-lien-tay-chon/id615186197">iOS</a>
                         <span>&amp;</span>
-                        <a href="#">Android</a>
+                        <a href="https://play.google.com/store/apps/details?id=vn.com.vng.phim123">Android</a>
                     </p>
                 </div>
-                <div class="col-md-6 right">
+                <div class="col-lg-6 right">
                     <img src="assets/img/img-banner/mobile.png" alt="" class="img-fluid phone-img">
                     <div id="banner__carousel">
                         <div class="owl-carousel owl-theme">
@@ -821,6 +1396,45 @@
                             <div class="banner__carouselItem">
                                 <img src="assets/img/img-banner/slide3.jpg" alt="">
                             </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide4.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide5.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide6.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide7.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide8.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide9.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide10.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide11.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide12.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide13.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide14.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide15.jpg" alt="">
+                            </div>
+                            <div class="banner__carouselItem">
+                                <img src="assets/img/img-banner/slide16.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -829,8 +1443,8 @@
     </section>
     <footer>
         <div class="container-fluild main-container-940">
-            <div class="row footer__block1">
-                <div class="col-lg-4 footer__FAQ">
+            <div class="row footer__block1 d-none d-xl-flex">                       
+                <div class="col-4 col-lg-4 footer__FAQ">
                     <p class="footer__title">TIX</p>
                     <div class="row">
                         <div class="col-lg-6">
@@ -843,7 +1457,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 footer__partner">
+                <div class="col-4 col-lg-4 footer__partner">
                     <p class="footer__title">ĐỐI TÁC</p>
                     <div class="row">
                         <div class="col-lg-12">
@@ -891,7 +1505,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 footer__application">
+                <div class="col-2 col-lg-2 footer__application">
                     <p class="footer__title">MOBILE APP</p>
                     <div class="row">
                         <div class="col-lg-12">
@@ -900,7 +1514,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 footer__social">
+                <div class="col-2 col-lg-2 footer__social">
                     <p class="footer__title">SOCIAL</p>
                     <div class="row">
                         <div class="col-lg-12">
@@ -908,13 +1522,25 @@
                             <a href="#"><img src="./assets/img/img-icons/zalo-logo.png" alt=""></a>
                         </div>
                     </div>
+                </div>        
+            </div>
+            <div class="row footer__block1--mobile d-flex d-xl-none">
+                <div class="row col-12 footer__FAQ justify-content-center">
+                    <a href="#">FAQ</a>
+                    <a href="#"> Thỏa thuận sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Brand Guidelines</a>
+                </div>
+                <div class="row col-12 footer__social justify-content-center">
+                    <a href="#"><img src="./assets/img/img-icons/facebook-logo.png" alt=""></a>
+                    <a href="#"><img src="./assets/img/img-icons/zalo-logo.png" alt=""></a>
                 </div>
             </div>
             <div class="row footer__block2">
-                <div class="col-lg-1 footer__block2-left">
+                <div class="col-12 col-xl-1 footer__block2-left">
                     <img src="./assets/img/img-icons/zion-logo.jpg" alt="">
                 </div>
-                <div class="col-lg-9 footer__block2-center">
+                <div class="col-12 col-xl-9 footer__block2-center">
                     <p class="footer__title">TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
                     <div class="footer__block2-infor">
                         <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
@@ -925,12 +1551,105 @@
                         <p>Email: <a href="$">support@tix.vn</a></p>
                     </div>
                 </div>
-                <div class="col-lg-2 footer__block2-right">
+                <div class="col-12 col-xl-2 footer__block2-right">
                     <img src="./assets/img/img-icons/cong-thuong-logo.png" alt="">
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- For modal, always put the end of the page -->
+    <!-- MODAL -->
+    <div class="modal right fade" id="menuHeaderMobile" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="menuItem d-flex">
+                    <i class="fas fa-user-circle"></i>
+                    <a href="#"> Đăng nhập </a>      
+                    <i class="fa fa-angle-right ml-auto backIcon" data-dismiss="modal"></i>  
+                </div>
+                <div class="menuItem">
+                    <a href="#">Lịch chiếu</a>                  
+                </div>
+                <div class="menuItem">
+                    <a href="#">Cụm rạp</a>                  
+                </div>
+                <div class="menuItem">
+                    <a href="#">Tin tức</a>                  
+                </div>
+                <div class="menuItem">
+                    <a href="#">Ứng dụng</a>                  
+                </div>
+                <div class="menuItem menuItem--modal">
+                    <a href="#" data-toggle="modal" data-target="#headerLocationModal">Hồ Chí Minh</a>                  
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="headerLocationModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="locationModal">
+                        <a class="locationModal__item">Hồ Chí Minh</a>
+                        <a class="locationModal__item">Hà Nội</a>
+                        <a class="locationModal__item">Đà Nẵng</a>
+                        <a class="locationModal__item">Hải Phòng</a>
+                        <a class="locationModal__item">Biên Hoà</a>
+                        <a class="locationModal__item">Nha Trang</a>
+                        <a class="locationModal__item">Bình Dương</a>
+                        <a class="locationModal__item">Phan Thiết</a>
+                        <a class="locationModal__item">Hạ Long</a>
+                        <a class="locationModal__item">Cần Thơ</a>
+                        <a class="locationModal__item">Vũng Tàu</a>
+                        <a class="locationModal__item">Quy Nhơn</a>
+                        <a class="locationModal__item">Huế</a>
+                        <a class="locationModal__item">Long Xuyên</a>
+                        <a class="locationModal__item">Thái Nguyên</a>
+                        <a class="locationModal__item">Buôn Ma Thuột</a>
+                        <a class="locationModal__item">Bắc Giang</a>
+                        <a class="locationModal__item">Bến Tre</a>
+                        <a class="locationModal__item">Việt Trì</a>
+                        <a class="locationModal__item">Ninh Bình</a>
+                        <a class="locationModal__item">Thái Bình</a>
+                        <a class="locationModal__item">Vinh</a>
+                        <a class="locationModal__item">Bảo Lộc</a>
+                        <a class="locationModal__item">Đà Lạt</a>
+                        <a class="locationModal__item">Trà Vinh</a>
+                        <a class="locationModal__item">Yên Bái</a>
+                        <a class="locationModal__item">Kiên Giang</a>
+                        <a class="locationModal__item">Vĩnh Long</a>
+                        <a class="locationModal__item">Cà Mau</a>
+                        <a class="locationModal__item">Hậu Giang</a>
+                        <a class="locationModal__item">Tây Ninh</a>
+                        <a class="locationModal__item">Tuyên Quang</a>
+                        <a class="locationModal__item">Thanh Hóa</a>
+                        <a class="locationModal__item">Nam Định</a>
+                        <a class="locationModal__item">Hải Dương</a>
+                        <a class="locationModal__item">Gia Lai</a>
+                        <a class="locationModal__item">Hà Tĩnh</a>
+                        <a class="locationModal__item">Phú Yên</a>
+                        <a class="locationModal__item">Bạc Liêu</a>
+                        <a class="locationModal__item">Long An</a>
+                        <a class="locationModal__item">Đồng Hới</a>
+                        <a class="locationModal__item">Hà Nam</a>
+                        <a class="locationModal__item">Bắc Ninh</a>
+                        <a class="locationModal__item">Quảng Trị</a>
+                        <a class="locationModal__item">Kon Tum</a>
+                        <a class="locationModal__item">Sóc Trăng</a>
+                        <a class="locationModal__item">Sơn La</a>
+                        <a class="locationModal__item">Lạng Sơn</a>
+                        <a class="locationModal__item">Quảng Ngãi</a>
+                        <a class="locationModal__item">Đồng Tháp</a>
+                        <a class="locationModal__item">Hưng Yên</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- script -->
 
@@ -969,6 +1688,15 @@
         $('.header__dropdownItem').click(function (e) {
             menuContent.css('display', '');
             $('.header__dropdownSelected').text(e.currentTarget.text);
+        })
+
+        // dropdown header--mobile
+        $('#headerLocationModal').on('show.bs.modal', function (e) {
+            $('#menuHeaderMobile').modal('hide');
+        })
+        $('.locationModal__item').click(function (e) {
+            $('#headerLocationModal').modal('hide');
+            $('.menuItem menuItem--modal a').text(e.currentTarget.text);
         })
 
         /* carsouel */

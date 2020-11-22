@@ -20,3 +20,8 @@
         @warn 'screen does not exist';
     } 
 }
+
+@mixin setHeight($lineHeight, $height) {
+    line-height: $lineHeight;
+    height: $height;
+}

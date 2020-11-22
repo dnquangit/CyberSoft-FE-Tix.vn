@@ -11,11 +11,12 @@ $color-black-1: #222;
 $color-gray-0: #9b9b9b;
 $color-gray-1: #4a4a4a;
 $color-gray-2: #949494;
+$color-gray-3: #ebebec;
+$color-gray-4: #bbb;
 $color-white-0: #fff;
 $color-red-0: #ff0000;
 $color-red-1: #fb4226;
 $color-red-2: #fa5238;
-
 // variable font-size
 $fs-0: 11.2px;
 $fs-1: 12px;
@@ -31,7 +32,6 @@ $fs-9: 20px;
 //variable font-weight
 $fw-normal: normal;
 $fw-bold-0: 700;
-
 $fw-bold-2: 500;
 
 //variable margin
@@ -39,6 +39,8 @@ $mg-0: 5px;
 $mg-1: 10px;
 $mg-2: 20px;
 $mg-3: 30px;
+$mg-4: 15px;
+$mg-5: 25px;
 
 //variable padding
 $pd-0: 5px;
@@ -46,9 +48,17 @@ $pd-1: 10px;
 $pd-2: 20px;
 $pd-3: 25px;
 $pd-4: 29px;
+$pd-5: 30px;
 
 //variable line-height
 $line-height-0: 25px;
+$line-height-1: 24px;
+$line-height-2: 20px;
+
+// variables height
+$height-0: 24px;
+$height-1: 40px;
+$height-2: 55px;
 
 //break points
 $breakpoints: (
@@ -57,3 +67,6 @@ $breakpoints: (
     "medium": 768px,
     "small": 576px,
 );
+
+// backgroud-color
+$bg-color-blue-8: rgba(12, 27, 54, 0.8);
