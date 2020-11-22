@@ -146,7 +146,7 @@ header {
             }
             
             .header__dropdownItem:hover{
-                background-color: #60c5ef;
+                background-color: $color-blue-1;
                 color: $color-white-0;
                 text-decoration: none;
             }
@@ -267,7 +267,7 @@ header {
     }
 
     .locationModal__item:hover{
-        background-color: #60c5ef;
+        background-color: $color-blue-1;;
         color: $color-white-0;
         text-decoration: none;
     }

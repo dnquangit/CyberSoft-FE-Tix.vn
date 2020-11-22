@@ -154,6 +154,95 @@
     </section>
 
     <section class="container-fluild main-container-940 movieList">
+        <div class="d-none d-xl-flex buyMovie">
+            <div class="buyMovie__listMovie">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false" >
+                    <span>Phim </span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item">Kiếm khách</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item"  >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item"  >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item"  >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item"  >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item"  >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item"  >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item" >Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                </div>
+            </div>
+            <div class="buyMovie__theater">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Rạp</span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item" >Lotte Cinema Vũng Tàu</a>
+                    <a class="dropdown-item" >Lotte Cinema Q7</a>
+                    <a class="dropdown-item" >Lotte Cinema Q12</a>
+                    <a class="dropdown-item" >CGV Gò Vấp Ngã</a>        
+                </div>
+            </div>
+            <div class="buyMovie__day">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Ngày Xem</span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item">
+                        <div>
+                            <p class="friendly">Hôm may</p>         
+                            <p class="origin">2020-11-23</p>
+                        </div>  
+                    </a>  
+                    <a class="dropdown-item" >
+                        <div>
+                            <p class="friendly">Ngày mai</p>         
+                            <p class="origin">2020-11-24</p>
+                        </div>  
+                    </a>  
+                    <a class="dropdown-item" >
+                        <div>
+                            <p class="friendly">Thứ 3</p>         
+                            <p class="origin">2020-11-25</p>
+                        </div>  
+                    </a>             
+                </div>
+            </div>
+            <div class="buyMovie__showTime">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Suất Chiếu </span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item" >
+                       17:00
+                    </a> 
+                    <a class="dropdown-item" >
+                        19:00
+                    </a>  
+                    <a class="dropdown-item">
+                        21:00
+                    </a>   
+                    <a class="dropdown-item">
+                        23:00
+                    </a>           
+                </div>
+            </div>
+            <div class="buyMovie__submit">
+                <div class="buyMovie__selectedItem">
+                    <button type="button" class="btn btn-secondary">Mua vé ngay</button>
+                </div>
+            </div>
+        </div>
         <div class="movieList-carousel">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -1716,6 +1805,26 @@
                     $('.owl-carousel').trigger('play.owl.autoplay', [3000]);
                 }
             }
+        });
+
+        // buy movie 
+        $('.buyMovie__listMovie .dropdown-item').click(function(e){
+            let text = e.currentTarget.text.substring(0, 24);
+            text = `${text}....`;
+
+            $('.buyMovie__listMovie .buyMovie__selectedItem span').text(text);
+        });
+        $('.buyMovie__theater .dropdown-item').click(function(e){
+            let text = e.currentTarget.text.substring(0, 10);
+            text = `${text}....`;
+            $('.buyMovie__theater .buyMovie__selectedItem span').text(text);
+        });
+        $('.buyMovie__day .dropdown-item').click(function(e){
+            let text = $(this).find('.friendly')[0].innerText;
+            $('.buyMovie__day .buyMovie__selectedItem span').text(text);
+        });
+        $('.buyMovie__showTime .dropdown-item').click(function(e){
+            $('.buyMovie__showTime .buyMovie__selectedItem span').text(e.target.text);
         });
 
     </script>
