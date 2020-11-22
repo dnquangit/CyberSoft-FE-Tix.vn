@@ -33,94 +33,90 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-xl">
-            <a class="col-1 col-lg-4 navbar-brand logo" href="#">
-                <img src="./assets/img/img-header/web-logo.png" alt="logo">
-            </a>
+        
+        <div class="logo">
+            <img class="logo" src="./assets/img/img-header/web-logo.png" alt="logo">      
+        </div>
+          
+        <div class="header__center d-none d-xl-flex">
+            <a href="#">Lịch chiếu</a>
+            <a href="#">Cụm rạp</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Ứng dụng</a>
+        </div>
 
-            <ul class="col-lg-4 navbar-nav d-none d-xl-block">
-                <div class="header__center">
-                    <li><a href="#">Lịch chiếu</a></li>
-                    <li><a href="#">Cụm rạp</a></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li> <a href="#">Ứng dụng</a></li>
-                </div>              
-            </ul>
+        <div class="header__right d-none d-xl-flex">
 
-            <div class="col-lg-4 navbar-nav d-none d-xl-block">
-                <div class="header__right">
-                    <div class="header__account">
-                        <i class="fas fa-user-circle"></i>
-                        <a href="#"> Đăng nhập </a>
-                    </div>
-                    <div class="header__location">
-                        <i class="header__iconMap fas fa-map-marker-alt"></i>
-                        <a class="header__dropdownSelected" href="#"> Hồ Chí Minh </a>
-                        <a class="header__drowdownBtn" href="#"><i class="fas fa-chevron-down"></i></a>
-                        <div class="header__dropdownMenu">
-                            <a class="header__dropdownItem">Hồ Chí Minh</a>
-                            <a class="header__dropdownItem">Hà Nội</a>
-                            <a class="header__dropdownItem">Đà Nẵng</a>
-                            <a class="header__dropdownItem">Hải Phòng</a>
-                            <a class="header__dropdownItem">Biên Hoà</a>
-                            <a class="header__dropdownItem">Nha Trang</a>
-                            <a class="header__dropdownItem">Bình Dương</a>
-                            <a class="header__dropdownItem">Phan Thiết</a>
-                            <a class="header__dropdownItem">Hạ Long</a>
-                            <a class="header__dropdownItem">Cần Thơ</a>
-                            <a class="header__dropdownItem">Vũng Tàu</a>
-                            <a class="header__dropdownItem">Quy Nhơn</a>
-                            <a class="header__dropdownItem">Huế</a>
-                            <a class="header__dropdownItem">Long Xuyên</a>
-                            <a class="header__dropdownItem">Thái Nguyên</a>
-                            <a class="header__dropdownItem">Buôn Ma Thuột</a>
-                            <a class="header__dropdownItem">Bắc Giang</a>
-                            <a class="header__dropdownItem">Bến Tre</a>
-                            <a class="header__dropdownItem">Việt Trì</a>
-                            <a class="header__dropdownItem">Ninh Bình</a>
-                            <a class="header__dropdownItem">Thái Bình</a>
-                            <a class="header__dropdownItem">Vinh</a>
-                            <a class="header__dropdownItem">Bảo Lộc</a>
-                            <a class="header__dropdownItem">Đà Lạt</a>
-                            <a class="header__dropdownItem">Trà Vinh</a>
-                            <a class="header__dropdownItem">Yên Bái</a>
-                            <a class="header__dropdownItem">Kiên Giang</a>
-                            <a class="header__dropdownItem">Vĩnh Long</a>
-                            <a class="header__dropdownItem">Cà Mau</a>
-                            <a class="header__dropdownItem">Hậu Giang</a>
-                            <a class="header__dropdownItem">Tây Ninh</a>
-                            <a class="header__dropdownItem">Tuyên Quang</a>
-                            <a class="header__dropdownItem">Thanh Hóa</a>
-                            <a class="header__dropdownItem">Nam Định</a>
-                            <a class="header__dropdownItem">Hải Dương</a>
-                            <a class="header__dropdownItem">Gia Lai</a>
-                            <a class="header__dropdownItem">Hà Tĩnh</a>
-                            <a class="header__dropdownItem">Phú Yên</a>
-                            <a class="header__dropdownItem">Bạc Liêu</a>
-                            <a class="header__dropdownItem">Long An</a>
-                            <a class="header__dropdownItem">Đồng Hới</a>
-                            <a class="header__dropdownItem">Hà Nam</a>
-                            <a class="header__dropdownItem">Bắc Ninh</a>
-                            <a class="header__dropdownItem">Quảng Trị</a>
-                            <a class="header__dropdownItem">Kon Tum</a>
-                            <a class="header__dropdownItem">Sóc Trăng</a>
-                            <a class="header__dropdownItem">Sơn La</a>
-                            <a class="header__dropdownItem">Lạng Sơn</a>
-                            <a class="header__dropdownItem">Quảng Ngãi</a>
-                            <a class="header__dropdownItem">Đồng Tháp</a>
-                            <a class="header__dropdownItem">Hưng Yên</a>
-                        </div>
-                    </div>
+            <div class="header__account">
+                <i class="fas fa-user-circle"></i>
+                <a href="#"> Đăng nhập </a>
+            </div>
+
+            <div class="header__location">
+                <i class="header__iconMap fas fa-map-marker-alt"></i>
+                <a class="header__dropdownSelected" href="#"> Hồ Chí Minh </a>
+                <a class="header__drowdownBtn" href="#"><i class="fas fa-chevron-down"></i></a>
+                <div class="header__dropdownMenu">
+                    <a class="header__dropdownItem">Hồ Chí Minh</a>
+                    <a class="header__dropdownItem">Hà Nội</a>
+                    <a class="header__dropdownItem">Đà Nẵng</a>
+                    <a class="header__dropdownItem">Hải Phòng</a>
+                    <a class="header__dropdownItem">Biên Hoà</a>
+                    <a class="header__dropdownItem">Nha Trang</a>
+                    <a class="header__dropdownItem">Bình Dương</a>
+                    <a class="header__dropdownItem">Phan Thiết</a>
+                    <a class="header__dropdownItem">Hạ Long</a>
+                    <a class="header__dropdownItem">Cần Thơ</a>
+                    <a class="header__dropdownItem">Vũng Tàu</a>
+                    <a class="header__dropdownItem">Quy Nhơn</a>
+                    <a class="header__dropdownItem">Huế</a>
+                    <a class="header__dropdownItem">Long Xuyên</a>
+                    <a class="header__dropdownItem">Thái Nguyên</a>
+                    <a class="header__dropdownItem">Buôn Ma Thuột</a>
+                    <a class="header__dropdownItem">Bắc Giang</a>
+                    <a class="header__dropdownItem">Bến Tre</a>
+                    <a class="header__dropdownItem">Việt Trì</a>
+                    <a class="header__dropdownItem">Ninh Bình</a>
+                    <a class="header__dropdownItem">Thái Bình</a>
+                    <a class="header__dropdownItem">Vinh</a>
+                    <a class="header__dropdownItem">Bảo Lộc</a>
+                    <a class="header__dropdownItem">Đà Lạt</a>
+                    <a class="header__dropdownItem">Trà Vinh</a>
+                    <a class="header__dropdownItem">Yên Bái</a>
+                    <a class="header__dropdownItem">Kiên Giang</a>
+                    <a class="header__dropdownItem">Vĩnh Long</a>
+                    <a class="header__dropdownItem">Cà Mau</a>
+                    <a class="header__dropdownItem">Hậu Giang</a>
+                    <a class="header__dropdownItem">Tây Ninh</a>
+                    <a class="header__dropdownItem">Tuyên Quang</a>
+                    <a class="header__dropdownItem">Thanh Hóa</a>
+                    <a class="header__dropdownItem">Nam Định</a>
+                    <a class="header__dropdownItem">Hải Dương</a>
+                    <a class="header__dropdownItem">Gia Lai</a>
+                    <a class="header__dropdownItem">Hà Tĩnh</a>
+                    <a class="header__dropdownItem">Phú Yên</a>
+                    <a class="header__dropdownItem">Bạc Liêu</a>
+                    <a class="header__dropdownItem">Long An</a>
+                    <a class="header__dropdownItem">Đồng Hới</a>
+                    <a class="header__dropdownItem">Hà Nam</a>
+                    <a class="header__dropdownItem">Bắc Ninh</a>
+                    <a class="header__dropdownItem">Quảng Trị</a>
+                    <a class="header__dropdownItem">Kon Tum</a>
+                    <a class="header__dropdownItem">Sóc Trăng</a>
+                    <a class="header__dropdownItem">Sơn La</a>
+                    <a class="header__dropdownItem">Lạng Sơn</a>
+                    <a class="header__dropdownItem">Quảng Ngãi</a>
+                    <a class="header__dropdownItem">Đồng Tháp</a>
+                    <a class="header__dropdownItem">Hưng Yên</a>
                 </div>
             </div>
-            <div class="col-1 d-block d-xl-none">
-                <div class="header__right--mobile">
-                    <img src="./assets/img/img-icons/menu-options.png" alt="menu" data-toggle="modal" data-target="#menuHeaderMobile">
 
-                </div>
-            </div>
-        </nav>
+        </div>
+        <div class="header__right--mobile d-block d-xl-none">
+            <img src="./assets/img/img-icons/menu-options.png" alt="menu" data-toggle="modal" data-target="#menuHeaderMobile">
+        </div>
     </header>
+    
     <section class="carousel d-none d-xl-block">
         <div class="owl-carousel owl-theme">
             <div class="carousel__item">

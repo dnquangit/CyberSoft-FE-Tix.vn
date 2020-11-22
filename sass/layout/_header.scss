@@ -9,44 +9,63 @@ header {
     background-color: rgba(255,255,255,.95);
     box-shadow: 0 0 15px rgba(0,0,0,.3);
 
-    .logo img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: $pd-1;
+    padding-bottom: $pd-1;
+    padding-left: $pd-2;
+    padding-bottom: $pd-2;
+
+    .logo{
         width: 50px;
-        height: 50px;        
+        height: 50px;
+    }
+
+    .logo img{
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        height: 100%;
+        width: 100%;
     }
 
     .header__center {
+
         display: flex;
-       
-        li {
-            margin-right: $mg-2;
-        }
+        align-items: center;
+        
         a {
             font-size: $fs-3;
             color: $color-black-0;
             transition: all .2s;
             text-decoration: none;
+            padding-right: $pd-1;
         }
     
-        // Pseudo class
         a:hover {
             color:$color-red-0;
         }
+    
     }
 
     .header__right {
         display: flex;
         justify-content: flex-end;
+
         .header__account {
     
             padding-right: $pd-1;
             margin-right: $mg-1;
             border-right: solid 1px $color-gray-0;
             display: flex;
+            align-items: center;
     
             i {
                 font-size: $fs-6;
                 color: $color-gray-0;
-                margin-right: 10px;
+                margin-right: $mg-1;
+                
             }
     
             a {
@@ -56,42 +75,38 @@ header {
                 color:$color-gray-0;
             }
         }
-    
-        
+
         .header__location {
     
             min-width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
     
             .header__iconMap {
-                font-size: $fs-8;
+                font-size: $fs-6;
                 color: $color-gray-0;
-                margin-top: 3px;
+                margin-right: $mg-1;
             }
     
             .header__dropdownSelected {
-                font-size: $fs-2;
+                font-size: $fs-3;
                 text-decoration: none;
-                line-height: $line-height-0;
-                position: relative;
-                bottom: 2px;
                 color: $color-gray-0;
             }
-    
+
             .header__drowdownBtn {
-                position: absolute;
-                right: 15px;
-    
+                margin-left: auto;
                 i {
                     color: $color-gray-0
                 }
             }
-    
+
             .header__dropdownMenu{
                 display: none;
             
                 position: absolute;
-                top: 52px;
-                right: 14px;
+                top: 76px;
             
                 z-index: 3;
             
@@ -138,13 +153,20 @@ header {
         }
     }
 
+
     .header__right--mobile{
+        width: 25px;
+        height: 15px;
+        margin-right: $mg-2;
+
         img {
-            width: 25px;
-            height: 15px;
-            cursor: pointer;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            height: 100%;
+            width: 100%;
         }
-    }
+    }    
 }
 
 #menuHeaderMobile {
