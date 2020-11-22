@@ -1731,11 +1731,8 @@
 
     <!-- internal script -->
     <script>
-
-        // dropdown header
-        let dropdownBtn = $('.header__drowdownBtn');
-        let menuContent = $('.header__dropdownMenu');
-        dropdownBtn.click(function () {
+        const dropDownItem = function(){
+            let menuContent = $('.header__dropdownMenu');
             if (menuContent.css('display') === '' || menuContent.css('display') === 'none') {
                 menuContent.css('display', 'block');
                 menuContent.css('top', ("&1 px").replace('&1', $('header').height()));
@@ -1743,8 +1740,21 @@
             else {
                 menuContent.css('display', '');
             }
+        } 
+
+        // dropdown header
+        let dropdownBtn = $('.header__drowdownBtn');
+        let dropdownSelected = $('.header__dropdownSelected');
+       
+        dropdownBtn.click(function () {
+            dropDownItem();
         });
+        dropdownSelected.click(function () {
+            dropDownItem();
+        });
+
         $('.header__dropdownItem').click(function (e) {
+            let menuContent = $('.header__dropdownMenu');
             menuContent.css('display', '');
             $('.header__dropdownSelected').text(e.currentTarget.text);
         })
@@ -1815,7 +1825,7 @@
             $('.buyMovie__listMovie .buyMovie__selectedItem span').text(text);
         });
         $('.buyMovie__theater .dropdown-item').click(function(e){
-            let text = e.currentTarget.text.substring(0, 10);
+            let text = e.currentTarget.text.substring(0, 7);
             text = `${text}....`;
             $('.buyMovie__theater .buyMovie__selectedItem span').text(text);
         });
