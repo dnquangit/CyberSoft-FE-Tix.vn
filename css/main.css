@@ -173,10 +173,7 @@ header .header__right .header__location {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-<<<<<<< HEAD
-=======
   cursor: pointer;
->>>>>>> c0b185dafc208d34321e9e8ad660e09c469a1d2b
 }
 
 header .header__right .header__location .header__iconMap {
@@ -1052,9 +1049,39 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   transition: all 0.2s;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content img {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-img {
+  position: relative;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-img img {
   margin-bottom: 10px;
   border-radius: 4px;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-img .bg-under {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 4px;
+  background: linear-gradient(to top, #000, transparent 100%);
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-img .bg-under .carousel__playVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-img .bg-under .carousel__playVideo .icon-play i {
+  font-size: 15px;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  padding: 20px 20px 20px 24px;
+  font-weight: bold;
 }
 
 .movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text .name-text {
@@ -1140,68 +1167,39 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   max-width: 150px;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .text-under {
   opacity: 0;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  border-radius: 4px;
-  transition: all 0.2s;
-}
-
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  border-radius: 4px;
-  background: linear-gradient(to top, #000, transparent 100%);
-}
-
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under .bg-play {
-  width: 100%;
-  height: 100%;
-}
-
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under .icon-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under .icon-play i {
-  font-size: 15px;
-  color: #fff;
-  border: solid 1px #fff;
-  border-radius: 50%;
-  padding: 20px 20px 20px 24px;
-  font-weight: bold;
-}
-
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .text-under {
-  position: absolute;
-  bottom: 5%;
+  bottom: 7%;
   width: 100%;
   height: 12%;
   border-radius: 4px;
   text-align: center;
   padding: 10px 0;
+  transition: all 0.2s;
   background: linear-gradient(to left, #fb4226, #ce3017 100%);
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .text-under p {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .text-under p {
   color: #fff;
   font-size: 18px;
   font-weight: normal;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .item-text {
-  opacity: 0;
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .text-under:hover {
+  background: #fb4226;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .display-under {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .bg-under {
   opacity: 1;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .text-under {
+  opacity: 1;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .item-text {
+  opacity: 0;
 }
 
 .movieList #myTabContent #now-showing .carousel__prev {
