@@ -33,11 +33,11 @@
 <body>
 
     <header>
-        
+
         <div class="logo">
-            <img class="logo" src="./assets/img/img-header/web-logo.png" alt="logo">      
+            <img class="logo" src="./assets/img/img-header/web-logo.png" alt="logo">
         </div>
-          
+
         <div class="header__center d-none d-xl-flex">
             <a href="#">Lịch chiếu</a>
             <a href="#">Cụm rạp</a>
@@ -113,10 +113,11 @@
 
         </div>
         <div class="header__right--mobile d-block d-xl-none">
-            <img src="./assets/img/img-icons/menu-options.png" alt="menu" data-toggle="modal" data-target="#menuHeaderMobile">
+            <img src="./assets/img/img-icons/menu-options.png" alt="menu" data-toggle="modal"
+                data-target="#menuHeaderMobile">
         </div>
     </header>
-    
+
     <section class="carousel d-none d-xl-block">
         <div class="owl-carousel owl-theme">
             <div class="carousel__item">
@@ -154,6 +155,95 @@
     </section>
 
     <section class="container-fluild main-container-940 movieList">
+        <div class="d-none d-xl-flex buyMovie">
+            <div class="buyMovie__listMovie">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Phim </span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item">Kiếm khách</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                    <a class="dropdown-item">Tiệc Trăng Máu 1- Blood Moon Party (C18)</a>
+                </div>
+            </div>
+            <div class="buyMovie__theater">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Rạp</span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item">Lotte Cinema Vũng Tàu</a>
+                    <a class="dropdown-item">Lotte Cinema Q7</a>
+                    <a class="dropdown-item">Lotte Cinema Q12</a>
+                    <a class="dropdown-item">CGV Gò Vấp Ngã</a>
+                </div>
+            </div>
+            <div class="buyMovie__day">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Ngày Xem</span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item">
+                        <div>
+                            <p class="friendly">Hôm may</p>
+                            <p class="origin">2020-11-23</p>
+                        </div>
+                    </a>
+                    <a class="dropdown-item">
+                        <div>
+                            <p class="friendly">Ngày mai</p>
+                            <p class="origin">2020-11-24</p>
+                        </div>
+                    </a>
+                    <a class="dropdown-item">
+                        <div>
+                            <p class="friendly">Thứ 3</p>
+                            <p class="origin">2020-11-25</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="buyMovie__showTime">
+                <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
+                    <span>Suất Chiếu </span>
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="dropdown-menu" data-flip="false">
+                    <a class="dropdown-item">
+                        17:00
+                    </a>
+                    <a class="dropdown-item">
+                        19:00
+                    </a>
+                    <a class="dropdown-item">
+                        21:00
+                    </a>
+                    <a class="dropdown-item">
+                        23:00
+                    </a>
+                </div>
+            </div>
+            <div class="buyMovie__submit">
+                <div class="buyMovie__selectedItem">
+                    <button type="button" class="btn btn-secondary">Mua vé ngay</button>
+                </div>
+            </div>
+        </div>
         <div class="movieList-carousel">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -171,12 +261,15 @@
                     <div class="owl-carousel owl-theme movieList-carousel-items">
                         <div class="item item-carousel">
                             <div class="row ">
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
+                                <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -191,157 +284,17 @@
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
                                         <div class="display-under">
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -352,9 +305,12 @@
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -368,14 +324,30 @@
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -389,14 +361,30 @@
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -410,14 +398,30 @@
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -430,6 +434,19 @@
                                         </span>
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -438,9 +455,12 @@
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -454,14 +474,30 @@
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -475,14 +511,30 @@
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -496,14 +548,30 @@
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                         </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-3 p-4">
                                     <div class="item-content">
                                         <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
+                                        <div class="item-text">
+                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                (C18)
+                                            </p>
+                                            <p class="time-text">100 phút</p>
+                                        </div>
                                         <span class="item-rating">
                                             <p class="text-rating">9.2</p>
                                             <p class="list-start">
@@ -516,6 +584,19 @@
                                         </span>
                                         <div class="movie-type">
                                             <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                        </div>
+                                        <div class="display-under">
+                                            <div class="bg-under">
+                                                <div class="bg-play">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -530,292 +611,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="coming-soon" role="tabpanel" aria-labelledby="coming-soon-tab">
-                    <div class="owl-carousel owl-theme movieList-carousel-items">
-                        <div class="item item-carousel">
-                            <div class="row ">
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item item-carousel">
-                            <div class="row ">
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 p-4">
-                                    <div class="item-content">
-                                        <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                        <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18)
-                                        </p>
-                                        <p>100 phút</p>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-3 item-content">
-                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3 item-content">
-                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3 item-content">
-                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                                <div class="col-3 item-content">
-                                    <img src="./assets/img/img-movies/chien-binh-hoi-sinh-the.png" alt="">
-                                    <p class="item-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party (C18) </p>
-                                    <p>100 phút</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="carousel__prev"><img class="img-fluid" src="./assets/img/img-carousel/back-session.png"
                             alt="">
                     </div>
@@ -1443,7 +1239,7 @@
     </section>
     <footer>
         <div class="container-fluild main-container-940">
-            <div class="row footer__block1 d-none d-xl-flex">                       
+            <div class="row footer__block1 d-none d-xl-flex">
                 <div class="col-4 col-lg-4 footer__FAQ">
                     <p class="footer__title">TIX</p>
                     <div class="row">
@@ -1522,7 +1318,7 @@
                             <a href="#"><img src="./assets/img/img-icons/zalo-logo.png" alt=""></a>
                         </div>
                     </div>
-                </div>        
+                </div>
             </div>
             <div class="row footer__block1--mobile d-flex d-xl-none">
                 <div class="row col-12 footer__FAQ justify-content-center">
@@ -1562,30 +1358,30 @@
     <!-- MODAL -->
     <div class="modal right fade" id="menuHeaderMobile" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-                <div class="menuItem d-flex">
-                    <i class="fas fa-user-circle"></i>
-                    <a href="#"> Đăng nhập </a>      
-                    <i class="fa fa-angle-right ml-auto backIcon" data-dismiss="modal"></i>  
-                </div>
-                <div class="menuItem">
-                    <a href="#">Lịch chiếu</a>                  
-                </div>
-                <div class="menuItem">
-                    <a href="#">Cụm rạp</a>                  
-                </div>
-                <div class="menuItem">
-                    <a href="#">Tin tức</a>                  
-                </div>
-                <div class="menuItem">
-                    <a href="#">Ứng dụng</a>                  
-                </div>
-                <div class="menuItem menuItem--modal">
-                    <a href="#" data-toggle="modal" data-target="#headerLocationModal">Hồ Chí Minh</a>                  
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="menuItem d-flex">
+                        <i class="fas fa-user-circle"></i>
+                        <a href="#"> Đăng nhập </a>
+                        <i class="fa fa-angle-right ml-auto backIcon" data-dismiss="modal"></i>
+                    </div>
+                    <div class="menuItem">
+                        <a href="#">Lịch chiếu</a>
+                    </div>
+                    <div class="menuItem">
+                        <a href="#">Cụm rạp</a>
+                    </div>
+                    <div class="menuItem">
+                        <a href="#">Tin tức</a>
+                    </div>
+                    <div class="menuItem">
+                        <a href="#">Ứng dụng</a>
+                    </div>
+                    <div class="menuItem menuItem--modal">
+                        <a href="#" data-toggle="modal" data-target="#headerLocationModal">Hồ Chí Minh</a>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
     </div>
 
@@ -1672,11 +1468,8 @@
 
     <!-- internal script -->
     <script>
-
-        // dropdown header
-        let dropdownBtn = $('.header__drowdownBtn');
-        let menuContent = $('.header__dropdownMenu');
-        dropdownBtn.click(function () {
+        const dropDownItem = function () {
+            let menuContent = $('.header__dropdownMenu');
             if (menuContent.css('display') === '' || menuContent.css('display') === 'none') {
                 menuContent.css('display', 'block');
                 menuContent.css('top', ("&1 px").replace('&1', $('header').height()));
@@ -1684,8 +1477,21 @@
             else {
                 menuContent.css('display', '');
             }
+        }
+
+        // dropdown header
+        let dropdownBtn = $('.header__drowdownBtn');
+        let dropdownSelected = $('.header__dropdownSelected');
+
+        dropdownBtn.click(function () {
+            dropDownItem();
         });
+        dropdownSelected.click(function () {
+            dropDownItem();
+        });
+
         $('.header__dropdownItem').click(function (e) {
+            let menuContent = $('.header__dropdownMenu');
             menuContent.css('display', '');
             $('.header__dropdownSelected').text(e.currentTarget.text);
         })
@@ -1746,6 +1552,26 @@
                     $('.owl-carousel').trigger('play.owl.autoplay', [3000]);
                 }
             }
+        });
+
+        // buy movie 
+        $('.buyMovie__listMovie .dropdown-item').click(function (e) {
+            let text = e.currentTarget.text.substring(0, 24);
+            text = `${text}....`;
+
+            $('.buyMovie__listMovie .buyMovie__selectedItem span').text(text);
+        });
+        $('.buyMovie__theater .dropdown-item').click(function (e) {
+            let text = e.currentTarget.text.substring(0, 7);
+            text = `${text}....`;
+            $('.buyMovie__theater .buyMovie__selectedItem span').text(text);
+        });
+        $('.buyMovie__day .dropdown-item').click(function (e) {
+            let text = $(this).find('.friendly')[0].innerText;
+            $('.buyMovie__day .buyMovie__selectedItem span').text(text);
+        });
+        $('.buyMovie__showTime .dropdown-item').click(function (e) {
+            $('.buyMovie__showTime .buyMovie__selectedItem span').text(e.target.text);
         });
 
     </script>

@@ -52,6 +52,7 @@ header {
     .header__right {
         display: flex;
         justify-content: flex-end;
+        padding-right: $pd-2;
 
         .header__account {
     
@@ -82,6 +83,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            cursor:pointer;
     
             .header__iconMap {
                 font-size: $fs-6;
@@ -98,7 +100,7 @@ header {
             .header__drowdownBtn {
                 margin-left: auto;
                 i {
-                    color: $color-gray-0
+                    color: $color-gray-0;
                 }
             }
 
@@ -146,7 +148,7 @@ header {
             }
             
             .header__dropdownItem:hover{
-                background-color: #60c5ef;
+                background-color: $color-blue-1;
                 color: $color-white-0;
                 text-decoration: none;
             }
@@ -267,7 +269,7 @@ header {
     }
 
     .locationModal__item:hover{
-        background-color: #60c5ef;
+        background-color: $color-blue-1;;
         color: $color-white-0;
         text-decoration: none;
     }

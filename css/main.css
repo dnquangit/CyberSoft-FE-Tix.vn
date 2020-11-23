@@ -144,6 +144,7 @@ header .header__center a:hover {
 header .header__right {
   display: flex;
   justify-content: flex-end;
+  padding-right: 20px;
 }
 
 header .header__right .header__account {
@@ -172,6 +173,10 @@ header .header__right .header__location {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> c0b185dafc208d34321e9e8ad660e09c469a1d2b
 }
 
 header .header__right .header__location .header__iconMap {
@@ -905,6 +910,105 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   }
 }
 
+.movieList {
+  position: relative;
+}
+
+.movieList .buyMovie {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px;
+}
+
+.movieList .buyMovie .buyMovie__selectedItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #9b9b9b;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.movieList .buyMovie .buyMovie__selectedItem span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+}
+
+.movieList .buyMovie .buyMovie__selectedItem a {
+  margin-left: auto;
+}
+
+.movieList .buyMovie .buyMovie__selectedItem a i {
+  color: #9b9b9b;
+}
+
+.movieList .buyMovie .dropdown-menu {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.movieList .buyMovie .dropdown-menu a:hover {
+  background-color: #60c5ef;
+  color: #fff;
+  text-decoration: none;
+}
+
+.movieList .buyMovie .dropdown-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.movieList .buyMovie .dropdown-menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.movieList .buyMovie .dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.movieList .buyMovie .buyMovie__listMovie {
+  width: 30%;
+  border-right: solid 1px rgba(209, 196, 196, 0.5);
+}
+
+.movieList .buyMovie .buyMovie__theater {
+  width: calc(70% / 4);
+  border-right: solid 1px rgba(209, 196, 196, 0.5);
+}
+
+.movieList .buyMovie .buyMovie__day {
+  width: calc(70% / 4);
+  border-right: solid 1px rgba(209, 196, 196, 0.5);
+}
+
+.movieList .buyMovie .buyMovie__day .friendly {
+  font-size: 15px;
+}
+
+.movieList .buyMovie .buyMovie__day .origin {
+  font-size: 11px;
+  color: #9b9b9b;
+}
+
+.movieList .buyMovie .buyMovie__showTime {
+  width: calc(70% / 4);
+  border-right: solid 1px rgba(209, 196, 196, 0.5);
+}
+
+.movieList .buyMovie .buyMovie__submit {
+  width: calc(70% / 4);
+}
+
 .movieList .movieList-carousel .nav-tabs {
   border-bottom: none;
   margin-bottom: 30px;
@@ -945,6 +1049,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 
 .movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content {
   position: relative;
+  transition: all 0.2s;
 }
 
 .movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content img {
@@ -952,7 +1057,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   border-radius: 4px;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text .name-text {
   font-family: "SF Medium";
   color: #000;
   font-size: 16px;
@@ -965,7 +1070,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   text-overflow: ellipsis;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text span {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text .name-text span {
   color: #fff;
   font-size: 14px;
   font-weight: normal;
@@ -978,7 +1083,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   margin-right: 8px;
 }
 
-.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content p {
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .item-text .time-text {
   color: #4a4a4a #000;
   font-size: 13px;
   font-weight: normal;
@@ -992,8 +1097,8 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   font-size: 16px;
   font-weight: normal;
   position: absolute;
-  top: 11px;
-  right: 11px;
+  top: 3%;
+  right: 5%;
   text-align: center;
   width: 54px;
   background-color: rgba(12, 27, 54, 0.8);
@@ -1026,8 +1131,8 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 
 .movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .movie-type {
   position: absolute;
-  top: -20px;
-  left: -10px;
+  top: -5%;
+  left: -4%;
   width: 80%;
   pointer-events: none;
   overflow: hidden;
@@ -1036,19 +1141,72 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 }
 
 .movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under {
-  border: 1px solid #000;
+  opacity: 0;
   position: absolute;
-  border-radius: 4px;
+  width: 100%;
+  height: 100%;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(39, 35, 35, 0.8);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  border-radius: 4px;
+  background: linear-gradient(to top, #000, transparent 100%);
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under .bg-play {
+  width: 100%;
+  height: 100%;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under .icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .bg-under .icon-play i {
+  font-size: 15px;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  padding: 20px 20px 20px 24px;
+  font-weight: bold;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .text-under {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  height: 12%;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(to left, #fb4226, #ce3017 100%);
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content .display-under .text-under p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .item-text {
+  opacity: 0;
+}
+
+.movieList #myTabContent #now-showing .movieList-carousel-items .item-carousel .item-content:hover .display-under {
+  opacity: 1;
 }
 
 .movieList #myTabContent #now-showing .carousel__prev {
   position: absolute;
-  top: 43%;
+  top: 40%;
   left: -8%;
   width: 50px;
   height: 54px;
@@ -1062,7 +1220,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 
 .movieList #myTabContent #now-showing .carousel__next {
   position: absolute;
-  top: 43%;
+  top: 40%;
   right: -8%;
   width: 50px;
   height: 54px;
