@@ -710,8 +710,80 @@
         }
     }
     .movieListp-table {
-        .movieList-content{
-            border:1px solid black;
+        .movieList-content {
+            .nav-icons {
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+                max-width: 93px;
+                .navbar-nav {
+                    list-style: none;
+                    .nav-item {
+                        padding: $pd-2 - 1 $pd-0;
+                        border-bottom: 1px solid $color-gray-3;
+                        opacity: 60%;
+                        img {
+                            width: 100%;
+                        }
+                        &:active {
+                            opacity: 100%;
+                        }
+                        &:hover {
+                            opacity: 100%;
+                        }
+                    }
+                }
+            }
+            .nav-cinemas {
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+                max-width: 280px;
+                .navbar-nav {
+                    list-style: none;
+                    .nav-item {
+                        padding: $pd-0 $pd-0;
+                        border-bottom: 1px solid $color-gray-3;
+                        opacity: 60%;
+                        .cinema-icon {
+                            padding: $pd-6 0 $pd-6 $pd-6x;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cinema-content {
+                            padding: $pd-6 0 0 $pd-1 - 1;
+                            p {
+                                margin-bottom: 0;
+                                @include styleText($color-black-0, $fs-3, $fw-normal);
+                                span {
+                                    @include styleText($color-green-0, $fs-3, $fw-bold-0);
+                                    display: inline-block !important;
+                                }
+                            }
+                            .child-span-one {
+                                @include styleText($color-gray-2, $fs-1, $fw-normal);
+                                display: inline-block !important;
+                                overflow: hidden;
+                                text-overflow: ellipsis !important;
+                                white-space: nowrap;
+                                width: 100%;
+                            }
+                            .child-span-two {
+                                line-height: 0 !important;
+                                display: inline-block !important;
+                                a {
+                                    @include styleText($color-red-1, $fs-1, $fw-normal);
+                                }
+                            }
+                        }
+                        &:active {
+                            opacity: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }

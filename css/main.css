@@ -1233,4 +1233,103 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 .movieList #myTabContent #now-showing .owl-dots {
   display: none;
 }
+
+.movieList .movieListp-table .movieList-content .nav-icons {
+  border-top: 1px solid #ebebec;
+  border-bottom: 1px solid #ebebec;
+  border-left: 1px solid #ebebec;
+  max-width: 93px;
+}
+
+.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav {
+  list-style: none;
+}
+
+.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item {
+  padding: 19px 5px;
+  border-bottom: 1px solid #ebebec;
+  opacity: 60%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item img {
+  width: 100%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item:active {
+  opacity: 100%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item:hover {
+  opacity: 100%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas {
+  border-top: 1px solid #ebebec;
+  border-bottom: 1px solid #ebebec;
+  border-left: 1px solid #ebebec;
+  max-width: 280px;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav {
+  list-style: none;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item {
+  padding: 5px 5px;
+  border-bottom: 1px solid #ebebec;
+  opacity: 60%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-icon {
+  padding: 15px 0 15px 15px;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content {
+  padding: 15px 0 0 9px;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content p span {
+  color: #8bc541;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block !important;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content .child-span-one {
+  color: #949494;
+  font-size: 12px;
+  font-weight: normal;
+  display: inline-block !important;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content .child-span-two {
+  line-height: 0 !important;
+  display: inline-block !important;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content .child-span-two a {
+  color: #fb4226;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item:active {
+  opacity: 100%;
+}
 /*# sourceMappingURL=main.css.map */
