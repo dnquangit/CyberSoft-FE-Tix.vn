@@ -504,7 +504,12 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   color: #949494;
   font-size: 12px;
   font-weight: normal;
-  line-height: 0.5;
+  white-space: initial;
+  line-height: 1.8;
+}
+
+footer .footer__block2 .footer__block2-center .footer__block2-infor span {
+  display: block;
 }
 
 @media screen and (max-width: 992px) {
@@ -605,40 +610,6 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 .carousel .carousel__next img {
   width: 40px;
   height: 40px;
-}
-
-.movieList .movieList-carousel-title {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 10px;
-  list-style: none;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title {
-  padding: 5px;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title a {
-  text-decoration: none;
-  font-family: "SF Medium";
-  color: #000;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 24px;
-  height: 24px;
-  transition: all 0.2s;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title:hover a {
-  color: #000;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.movieList .movieList-carousel-title .movieList-text-title.active a {
-  color: #fa5238;
-  font-size: 20px;
-  font-weight: normal;
 }
 
 /*================== NEWS ==================*/
@@ -1234,102 +1205,126 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
   display: none;
 }
 
-.movieList .movieListp-table .movieList-content .nav-icons {
-  border-top: 1px solid #ebebec;
-  border-bottom: 1px solid #ebebec;
-  border-left: 1px solid #ebebec;
-  max-width: 93px;
+.movieList .movieList-table .inemaComplex {
+  background-image: url(../assets/img/img-news/back-news.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 120px;
 }
 
-.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav {
-  list-style: none;
+.movieList .movieList-table .movieList-content {
+  border: 1px solid #ebebec;
 }
 
-.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item {
-  padding: 19px 5px;
+.movieList .movieList-table .movieList-content .movie-layout-table {
+  min-height: 705px;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas {
+  max-width: 10%;
+  padding: 0;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas ul .nav-item {
+  margin: 20px 20px 0 20px;
   border-bottom: 1px solid #ebebec;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas ul .nav-item .nav-link {
+  padding: 0;
   opacity: 60%;
 }
 
-.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item img {
+.movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas ul .nav-item .nav-link img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
-.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item:active {
-  opacity: 100%;
+.movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas ul .nav-item .nav-link.active {
+  opacity: 1;
 }
 
-.movieList .movieListp-table .movieList-content .nav-icons .navbar-nav .nav-item:hover {
-  opacity: 100%;
+.movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas ul .nav-item:hover .nav-link {
+  opacity: 1;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas {
-  border-top: 1px solid #ebebec;
-  border-bottom: 1px solid #ebebec;
-  border-left: 1px solid #ebebec;
-  max-width: 280px;
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas {
+  border-right: 1px solid #ebebec;
+  padding: 0;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav {
-  list-style: none;
-}
-
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item {
-  padding: 5px 5px;
-  border-bottom: 1px solid #ebebec;
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item {
+  margin: 0;
+  padding: 20px 20px 0 20px;
+  max-width: 100%;
   opacity: 60%;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-icon {
-  padding: 15px 0 15px 15px;
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table {
+  border-bottom: 1px solid #ebebec;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-icon img {
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .img-cinema {
+  padding-left: 0;
+  padding-right: 13px;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .img-cinema .nav-link {
+  padding: 0;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .img-cinema .nav-link img {
   width: 100%;
-  height: 100%;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content {
-  padding: 15px 0 0 9px;
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .content-cinema {
+  padding: 0 0 10px 0;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content p {
-  margin-bottom: 0;
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .content-cinema p {
+  margin: 0;
   color: #000;
   font-size: 14px;
   font-weight: normal;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content p span {
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .content-cinema p span {
   color: #8bc541;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   display: inline-block !important;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content .child-span-one {
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .content-cinema .local-cinema {
+  display: block;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #949494;
   font-size: 12px;
   font-weight: normal;
-  display: inline-block !important;
-  overflow: hidden;
-  text-overflow: ellipsis !important;
-  white-space: nowrap;
-  width: 100%;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content .child-span-two {
-  line-height: 0 !important;
-  display: inline-block !important;
-}
-
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item .cinema-content .child-span-two a {
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item .nav-table .content-cinema .details-cinema a {
+  display: block;
   color: #fb4226;
   font-size: 12px;
   font-weight: normal;
 }
 
-.movieList .movieListp-table .movieList-content .nav-cinemas .navbar-nav .nav-item:active {
-  opacity: 100%;
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item:hover {
+  opacity: 1;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas ul .nav-item.active {
+  opacity: 1;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas {
+  border: 1px solid #ebebec;
+  min-width: 55%;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

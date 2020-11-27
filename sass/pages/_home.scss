@@ -87,33 +87,33 @@
 }
 
 //  MOVELISt
-.movieList {
-    .movieList-carousel-title {
-        margin-top: $mg-3;
-        margin-bottom: $mg-3;
-        margin-right: $mg-1;
-        list-style: none;
-        .movieList-text-title {
-            padding: $pd-0;
-            a {
-                text-decoration: none;
-                @include fontText($font-SFMedium);
-                @include styleText($color-black-0, $fs-4 + 4, $fw-normal);
-                line-height: 24px;
-                height: 24px;
-                transition: all 0.2s;
-            }
-            &:hover a {
-                @include styleText($color-black-0, $fs-5, $fw-normal);
-            }
-        }
-        .movieList-text-title.active {
-            a {
-                @include styleText($color-red-2, $fs-4 + 4, $fw-normal);
-            }
-        }
-    }
-}
+// .movieList {
+//     .movieList-carousel-title {
+//         margin-top: $mg-3;
+//         margin-bottom: $mg-3;
+//         margin-right: $mg-1;
+//         list-style: none;
+//         .movieList-text-title {
+//             padding: $pd-0;
+//             a {
+//                 text-decoration: none;
+//                 @include fontText($font-SFMedium);
+//                 @include styleText($color-black-0, $fs-4 + 4, $fw-normal);
+//                 line-height: 24px;
+//                 height: 24px;
+//                 transition: all 0.2s;
+//             }
+//             &:hover a {
+//                 @include styleText($color-black-0, $fs-5, $fw-normal);
+//             }
+//         }
+//         .movieList-text-title.active {
+//             a {
+//                 @include styleText($color-red-2, $fs-4 + 4, $fw-normal);
+//             }
+//         }
+//     }
+// }
 
 /*================== NEWS ==================*/
 .news {
@@ -412,7 +412,6 @@
 // MOVIELITS
 .movieList {
     position: relative;
-    // padding-top: 60px;
 
     .buyMovie {
         position: absolute;
@@ -709,79 +708,106 @@
             }
         }
     }
-    .movieListp-table {
+
+    .movieList-table {
+        .inemaComplex {
+            background-image: url(../assets/img/img-news/back-news.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: $height-3;
+        }
+
         .movieList-content {
-            .nav-icons {
-                border-top: 1px solid $color-gray-3;
-                border-bottom: 1px solid $color-gray-3;
-                border-left: 1px solid $color-gray-3;
-                max-width: 93px;
-                .navbar-nav {
-                    list-style: none;
-                    .nav-item {
-                        padding: $pd-2 - 1 $pd-0;
-                        border-bottom: 1px solid $color-gray-3;
-                        opacity: 60%;
-                        img {
-                            width: 100%;
-                        }
-                        &:active {
-                            opacity: 100%;
-                        }
-                        &:hover {
-                            opacity: 100%;
+            border: $border;
+            .movie-layout-table {
+                min-height: $height-4;
+                .icon-cinemas {
+                    max-width: 10%;
+                    padding: 0;
+                    ul {
+                        .nav-item {
+                            margin: 20px 20px 0 20px;
+                            border-bottom: $border;
+                            .nav-link {
+                                padding: 0;
+                                opacity: 60%;
+                                img {
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                            .nav-link.active {
+                                opacity: 1;
+                            }
+                            &:hover {
+                                .nav-link {
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
                 }
-            }
-            .nav-cinemas {
-                border-top: 1px solid $color-gray-3;
-                border-bottom: 1px solid $color-gray-3;
-                border-left: 1px solid $color-gray-3;
-                max-width: 280px;
-                .navbar-nav {
-                    list-style: none;
-                    .nav-item {
-                        padding: $pd-0 $pd-0;
-                        border-bottom: 1px solid $color-gray-3;
-                        opacity: 60%;
-                        .cinema-icon {
-                            padding: $pd-6 0 $pd-6 $pd-6x;
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .cinema-content {
-                            padding: $pd-6 0 0 $pd-1 - 1;
-                            p {
-                                margin-bottom: 0;
-                                @include styleText($color-black-0, $fs-3, $fw-normal);
-                                span {
-                                    @include styleText($color-green-0, $fs-3, $fw-bold-0);
-                                    display: inline-block !important;
+                .intro-cinemas {
+                    border-right: $border;
+                    padding: 0;
+                    ul {
+                        .nav-item {
+                            margin: 0;
+                            padding: 20px 20px 0 20px;
+                            max-width: 100%;
+                            opacity: 60%;
+                            .nav-table {
+                                border-bottom: $border;
+                                .img-cinema {
+                                    padding-left: 0;
+                                    padding-right: 13px;
+                                    .nav-link {
+                                        padding: 0;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                .content-cinema {
+                                    padding: 0 0 10px 0;
+                                    p {
+                                        margin: 0;
+                                        @include styleText($color-black-0, $fs-3, $fw-normal);
+                                        span {
+                                            @include styleText($color-green-0, $fs-4, $fw-bold-0);
+                                            display: inline-block !important;
+                                        }
+                                    }
+                                    .local-cinema {
+                                        display: block;
+                                        max-width: 90%;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        @include styleText($color-gray-2, $fs-1, $fw-normal);
+                                    }
+                                    .details-cinema {
+                                        a {
+                                            display: block;
+                                            @include styleText($color-red-1, $fs-1, $fw-normal);
+                                        }
+                                    }
                                 }
                             }
-                            .child-span-one {
-                                @include styleText($color-gray-2, $fs-1, $fw-normal);
-                                display: inline-block !important;
-                                overflow: hidden;
-                                text-overflow: ellipsis !important;
-                                white-space: nowrap;
-                                width: 100%;
-                            }
-                            .child-span-two {
-                                line-height: 0 !important;
-                                display: inline-block !important;
-                                a {
-                                    @include styleText($color-red-1, $fs-1, $fw-normal);
-                                }
+                            &:hover {
+                                opacity: 1;
                             }
                         }
-                        &:active {
-                            opacity: 100%;
+                        .nav-item.active {
+                            opacity: 1;
                         }
                     }
+                }
+                .showTime-cinemas {
+                    border: $border;
+                    min-width: 55%;
+                    padding: 0;
                 }
             }
         }
