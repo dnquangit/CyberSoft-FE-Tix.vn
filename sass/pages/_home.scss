@@ -87,33 +87,33 @@
 }
 
 //  MOVELISt
-.movieList {
-    .movieList-carousel-title {
-        margin-top: $mg-3;
-        margin-bottom: $mg-3;
-        margin-right: $mg-1;
-        list-style: none;
-        .movieList-text-title {
-            padding: $pd-0;
-            a {
-                text-decoration: none;
-                @include fontText($font-SFMedium);
-                @include styleText($color-black-0, $fs-4 + 4, $fw-normal);
-                line-height: 24px;
-                height: 24px;
-                transition: all 0.2s;
-            }
-            &:hover a {
-                @include styleText($color-black-0, $fs-5, $fw-normal);
-            }
-        }
-        .movieList-text-title.active {
-            a {
-                @include styleText($color-red-2, $fs-4 + 4, $fw-normal);
-            }
-        }
-    }
-}
+// .movieList {
+//     .movieList-carousel-title {
+//         margin-top: $mg-3;
+//         margin-bottom: $mg-3;
+//         margin-right: $mg-1;
+//         list-style: none;
+//         .movieList-text-title {
+//             padding: $pd-0;
+//             a {
+//                 text-decoration: none;
+//                 @include fontText($font-SFMedium);
+//                 @include styleText($color-black-0, $fs-4 + 4, $fw-normal);
+//                 line-height: 24px;
+//                 height: 24px;
+//                 transition: all 0.2s;
+//             }
+//             &:hover a {
+//                 @include styleText($color-black-0, $fs-5, $fw-normal);
+//             }
+//         }
+//         .movieList-text-title.active {
+//             a {
+//                 @include styleText($color-red-2, $fs-4 + 4, $fw-normal);
+//             }
+//         }
+//     }
+// }
 
 /*================== NEWS ==================*/
 .news {
@@ -265,7 +265,7 @@
 }
 
 //------ responsive news
-@include responsive('small') {
+@include responsive("small") {
     .news {
         #homeNews {
             #myNewsContent {
@@ -299,7 +299,7 @@
             .nav-tabs {
                 .nav-link {
                     @include styleText($color-black-0, $fs-4, $fw-normal);
-                    
+
                     &:hover {
                         font-size: $fs-4 + 2;
                     }
@@ -312,7 +312,6 @@
         }
     }
 }
-
 
 /*================== BANNER ==================*/
 .banner {
@@ -398,7 +397,7 @@
             text-align: center;
 
             .left__text {
-                font-size:$fs-6;
+                font-size: $fs-6;
             }
 
             .left__description {
@@ -411,7 +410,6 @@
 // MOVIELITS
 .movieList {
     position: relative;
-    // padding-top: 60px;
 
     .buyMovie {
         position: absolute;
@@ -537,6 +535,7 @@
             }
         }
     }
+
     #myTabContent {
         padding-top: $pd-5;
         #now-showing {
@@ -547,9 +546,37 @@
                     .item-content {
                         position: relative;
                         transition: all 0.2s;
-                        img {
-                            margin-bottom: $mg-1;
-                            border-radius: 4px;
+                        .item-img {
+                            position: relative;
+                            img {
+                                margin-bottom: $mg-1;
+                                border-radius: 4px;
+                            }
+                            .bg-under {
+                                opacity: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                border-radius: 4px;
+                                background: linear-gradient(to top, #000, transparent 100%);
+                                .carousel__playVideo {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    .icon-play {
+                                        i {
+                                            font-size: $fs-3 + 1;
+                                            color: $color-white-0;
+                                            border: solid 1px $color-white-0;
+                                            border-radius: 50%;
+                                            padding: $pd-2 $pd-2 $pd-2 $pd-2 + 4;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
                         }
                         .item-text {
                             .name-text {
@@ -618,59 +645,33 @@
                             transform: translate(-5%, -12%);
                             max-width: 150px;
                         }
-                        .display-under {
+                        .text-under {
                             opacity: 0;
                             position: absolute;
+                            bottom: 7%;
                             width: 100%;
-                            height: 100%;
-                            top: 0;
+                            height: 12%;
                             border-radius: 4px;
+                            text-align: center;
+                            padding: 10px 0;
                             transition: all 0.2s;
-                            .bg-under {
-                                position: absolute;
-                                width: 100%;
-                                height: 80%;
-                                border-radius: 4px;
-                                background: linear-gradient(to top, #000, transparent 100%);
-                                .bg-play {
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                                .icon-play {
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                    i {
-                                        font-size: $fs-3 + 1;
-                                        color: $color-white-0;
-                                        border: solid 1px $color-white-0;
-                                        border-radius: 50%;
-                                        padding: $pd-2 $pd-2 $pd-2 $pd-2 + 4;
-                                        font-weight: bold;
-                                    }
-                                }
+                            background: linear-gradient(to left, $color-red-1, $color-red-3 100%);
+                            p {
+                                @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
                             }
-                            .text-under {
-                                position: absolute;
-                                bottom: 5%;
-                                width: 100%;
-                                height: 12%;
-                                border-radius: 4px;
-                                text-align: center;
-                                padding: 10px 0;
-                                background: linear-gradient(to left, #fb4226, #ce3017 100%);
-                                p {
-                                    @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
-                                }
+                            &:hover {
+                                background: $color-red-1;
                             }
                         }
                         &:hover {
+                            .bg-under {
+                                opacity: 1;
+                            }
+                            .text-under {
+                                opacity: 1;
+                            }
                             .item-text {
                                 opacity: 0;
-                            }
-                            .display-under {
-                                opacity: 1;
                             }
                         }
                     }
@@ -702,6 +703,110 @@
             }
             .owl-dots {
                 display: none;
+            }
+        }
+    }
+
+    .movieList-table {
+        .inemaComplex {
+            background-image: url(../assets/img/img-news/back-news.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: $height-3;
+        }
+
+        .movieList-content {
+            border: $border;
+            .movie-layout-table {
+                min-height: $height-4;
+                .icon-cinemas {
+                    max-width: 10%;
+                    padding: 0;
+                    ul {
+                        .nav-item {
+                            margin: 20px 20px 0 20px;
+                            border-bottom: $border;
+                            .nav-link {
+                                padding: 0;
+                                opacity: 60%;
+                                img {
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                            .nav-link.active {
+                                opacity: 1;
+                            }
+                            &:hover {
+                                .nav-link {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .intro-cinemas {
+                    border-right: $border;
+                    padding: 0;
+                    ul {
+                        .nav-item {
+                            margin: 0;
+                            padding: 20px 20px 0 20px;
+                            max-width: 100%;
+                            opacity: 60%;
+                            .nav-table {
+                                border-bottom: $border;
+                                .img-cinema {
+                                    padding-left: 0;
+                                    padding-right: 13px;
+                                    .nav-link {
+                                        padding: 0;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                .content-cinema {
+                                    padding: 0 0 10px 0;
+                                    p {
+                                        margin: 0;
+                                        @include styleText($color-black-0, $fs-3, $fw-normal);
+                                        span {
+                                            @include styleText($color-green-0, $fs-4, $fw-bold-0);
+                                            display: inline-block !important;
+                                        }
+                                    }
+                                    .local-cinema {
+                                        display: block;
+                                        max-width: 90%;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        @include styleText($color-gray-2, $fs-1, $fw-normal);
+                                    }
+                                    .details-cinema {
+                                        a {
+                                            display: block;
+                                            @include styleText($color-red-1, $fs-1, $fw-normal);
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                        .nav-item.active {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .showTime-cinemas {
+                    border: $border;
+                    min-width: 55%;
+                    padding: 0;
+                }
             }
         }
     }

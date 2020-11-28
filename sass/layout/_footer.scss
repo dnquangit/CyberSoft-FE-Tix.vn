@@ -154,7 +154,11 @@ footer {
 
             .footer__block2-infor {
                 @include styleText($color-gray-2, $fs-1, $fw-normal);
-                line-height: 0.5;
+                white-space:initial;
+                line-height: 1.8;
+                span {
+                    display: block;
+                }
             }
 
             @include responsive('large'){

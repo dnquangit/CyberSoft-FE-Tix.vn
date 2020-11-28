@@ -18,7 +18,9 @@ $color-white-0: #fff;
 $color-red-0: #ff0000;
 $color-red-1: #fb4226;
 $color-red-2: #fa5238;
-$color-blue-1:#60c5ef;
+$color-red-3: #ce3017;
+$color-blue-1: #60c5ef;
+$color-green-0: #8bc541;
 // variable font-size
 $fs-0: 11.2px;
 $fs-1: 12px;
@@ -51,6 +53,7 @@ $pd-2: 20px;
 $pd-3: 25px;
 $pd-4: 29px;
 $pd-5: 30px;
+$pd-6: 15px;
 
 //variable line-height
 $line-height-0: 25px;
@@ -61,7 +64,8 @@ $line-height-2: 20px;
 $height-0: 24px;
 $height-1: 40px;
 $height-2: 55px;
-
+$height-3: 120px;
+$height-4: 705px;
 //break points
 $breakpoints: (
     "extra-large": 1200px,
@@ -72,3 +76,6 @@ $breakpoints: (
 
 // backgroud-color
 $bg-color-blue-8: rgba(12, 27, 54, 0.8);
+
+// border
+$border: 1px solid $color-gray-3;
