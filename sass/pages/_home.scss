@@ -725,6 +725,7 @@
                 .icon-cinemas {
                     max-width: 10%;
                     padding: 0;
+                    border-right: $border;
                     ul {
                         .nav-item {
                             margin: 20px 20px 0 20px;
@@ -734,7 +735,7 @@
                                 opacity: 60%;
                                 img {
                                     width: 100%;
-                                    margin-bottom: 20px;
+                                    margin-bottom: 16px;
                                 }
                             }
                             .nav-link.active {
@@ -781,7 +782,7 @@
                                     }
                                     .local-cinema {
                                         display: block;
-                                        max-width: 90%;
+                                        max-width: 95%;
                                         overflow: hidden;
                                         white-space: nowrap;
                                         text-overflow: ellipsis;
@@ -805,9 +806,93 @@
                     }
                 }
                 .showTime-cinemas {
-                    border: $border;
                     min-width: 55%;
                     padding: 0;
+                    .nav-table {
+                        padding-left: 18px;
+                        .nav-item {
+                            border-bottom: $border;
+                            padding-top: 15px;
+                            width: 100%;
+                            .nav-movie-title {
+                                margin: 0;
+                                .img-movie {
+                                    padding: 0;
+                                    max-width: 60px;
+                                    .nav-link {
+                                        padding: 0 5px 0 0;
+                                        height: 100%;
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                            height: 1;
+                                        }
+                                    }
+                                }
+                                .content-movie {
+                                    padding-top: 5px;
+                                    padding-right: 0;
+                                    max-width: 85%;
+                                    p {
+                                        margin: 0;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        @include fontText($font-SFMedium);
+                                        @include styleText($color-black-0, $fs-3, $fw-bold-2);
+                                        span {
+                                            border: $border;
+                                            @include styleText($color-white-0, $fs-1, $fw-normal);
+                                            background-color: $color-red-1;
+                                            border-radius: 4px;
+                                            padding: 3px 6px;
+                                            margin-right: 5px;
+                                            display: inline-block;
+                                        }
+                                    }
+                                    .detail-movie {
+                                        display: block;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        @include styleText($color-gray-2, $fs-1, $fw-normal);
+                                    }
+                                }
+                            }
+                            .movie-type {
+                                @include fontText($font-SFMedium);
+                                @include styleText($color-black-0, $fs-4, $fw-bold-2);
+                                display: block;
+                                margin: 13px 0 5px 0;
+                            }
+                            .nav-show-times {
+                                padding: 10px 0 35px 0;
+                                margin: 0;
+                                .time-item {
+                                    padding: 0;
+                                    transition: all 0.2s;
+                                    a {
+                                        border: $border;
+                                        border-radius: 7px;
+                                        padding: 11px 8px;
+                                        text-decoration: none;
+                                        border: 1px solid $color-gray-5;
+                                        background-color: rgba(246, 246, 246, 0.5);
+                                        @include styleText($color-gray-0, $fs-3, $fw-bold-3);
+                                        .start-time {
+                                            @include fontText($font-SFMedium);
+                                            @include styleText($color-green-1, $fs-4 + 2, $fw-bold-2);
+                                        }
+                                    }
+                                    &:hover {
+                                        .start-time {
+                                            color: $color-red-1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
