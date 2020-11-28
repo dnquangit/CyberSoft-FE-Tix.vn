@@ -173,10 +173,7 @@ header .header__right .header__location {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-<<<<<<< HEAD
-=======
   cursor: pointer;
->>>>>>> c0b185dafc208d34321e9e8ad660e09c469a1d2b
 }
 
 header .header__right .header__location .header__iconMap {
@@ -867,8 +864,9 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor {
 .banner .right .phone-img {
   display: block;
   padding: 0 28%;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  margin-right: 0 !important;
 }
 
 .banner .right #banner__carousel {
