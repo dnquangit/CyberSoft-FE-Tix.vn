@@ -1207,6 +1207,10 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
   display: none;
 }
 
+.movieList .movieList-table {
+  margin-bottom: 35px;
+}
+
 .movieList .movieList-table .inemaComplex {
   background-image: url(../assets/img/img-news/back-news.png);
   background-size: contain;
