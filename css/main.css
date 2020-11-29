@@ -881,6 +881,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 
 .movieList {
   position: relative;
+  padding: 0;
 }
 
 .movieList .buyMovie {
@@ -1219,11 +1220,12 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table {
-  min-height: 705px;
+  max-height: 705px;
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .icon-cinemas {
   max-width: 10%;
+  max-height: 705px;
   padding: 0;
   border-right: 1px solid #ebebec;
 }
@@ -1252,6 +1254,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .intro-cinemas {
+  max-height: 705px;
   border-right: 1px solid #ebebec;
   padding: 0;
 }
@@ -1325,12 +1328,15 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas {
-  min-width: 55%;
+  overflow-y: scroll;
+  max-height: 705px;
+  min-width: 531px;
   padding: 0;
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table {
   padding-left: 18px;
+  padding-right: 12px;
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item {
@@ -1356,7 +1362,6 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-movie-title .img-movie .nav-link img {
   display: block;
   width: 100%;
-  height: 1;
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-movie-title .content-movie {
@@ -1408,7 +1413,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-show-times {
-  padding: 10px 0 15px 0;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -1421,7 +1426,7 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-show-times .time-item a {
   border: 1px solid #ebebec;
   border-radius: 7px;
-  padding: 11px 8px;
+  padding: 11px 7px;
   text-decoration: none;
   border: 1px solid #e4e4e4;
   background-color: rgba(246, 246, 246, 0.5);
@@ -1439,5 +1444,14 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-show-times .time-item:hover .start-time {
   color: #fb4226;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas::-webkit-scrollbar {
+  width: 4px;
+}
+
+.movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=main.css.map */
