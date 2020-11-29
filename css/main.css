@@ -1408,13 +1408,14 @@ footer .footer__block2 .footer__block2-center .footer__block2-infor span {
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-show-times {
-  padding: 10px 0 35px 0;
+  padding: 10px 0 15px 0;
   margin: 0;
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-show-times .time-item {
   padding: 0;
   transition: all 0.2s;
+  margin-bottom: 25px;
 }
 
 .movieList .movieList-table .movieList-content .movie-layout-table .showTime-cinemas .nav-table .nav-item .nav-show-times .time-item a {

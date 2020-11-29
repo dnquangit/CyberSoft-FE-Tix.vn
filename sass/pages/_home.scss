@@ -237,7 +237,6 @@
                 }
 
                 .news__title {
-                    
                     p {
                         opacity: 0.7;
                         @include fontText($font-SFRegular);
@@ -726,14 +725,14 @@
                     border-right: $border;
                     ul {
                         .nav-item {
-                            margin: 20px 20px 0 20px;
+                            margin: $mg-2 $mg-2 0 $mg-2;
                             border-bottom: $border;
                             .nav-link {
                                 padding: 0;
                                 opacity: 60%;
                                 img {
                                     width: 100%;
-                                    margin-bottom: 16px;
+                                    margin-bottom: $mg-4 + 1;
                                 }
                             }
                             .nav-link.active {
@@ -753,14 +752,14 @@
                     ul {
                         .nav-item {
                             margin: 0;
-                            padding: 20px 20px 0 20px;
+                            padding: $pd-2 $pd-2 0 $pd-2;
                             max-width: 100%;
                             opacity: 60%;
                             .nav-table {
                                 border-bottom: $border;
                                 .img-cinema {
                                     padding-left: 0;
-                                    padding-right: 13px;
+                                    padding-right: $pd-6 - 2;
                                     .nav-link {
                                         padding: 0;
                                         img {
@@ -769,7 +768,7 @@
                                     }
                                 }
                                 .content-cinema {
-                                    padding: 0 0 10px 0;
+                                    padding: 0 0 $pd-1 0;
                                     p {
                                         margin: 0;
                                         @include styleText($color-black-0, $fs-3, $fw-normal);
@@ -807,10 +806,10 @@
                     min-width: 55%;
                     padding: 0;
                     .nav-table {
-                        padding-left: 18px;
+                        padding-left: $pd-2 - 2;
                         .nav-item {
                             border-bottom: $border;
-                            padding-top: 15px;
+                            padding-top: $pd-6;
                             width: 100%;
                             .nav-movie-title {
                                 margin: 0;
@@ -818,7 +817,7 @@
                                     padding: 0;
                                     max-width: 60px;
                                     .nav-link {
-                                        padding: 0 5px 0 0;
+                                        padding: 0 $pd-0 0 0;
                                         height: 100%;
                                         img {
                                             display: block;
@@ -828,7 +827,7 @@
                                     }
                                 }
                                 .content-movie {
-                                    padding-top: 5px;
+                                    padding-top: $pd-0;
                                     padding-right: 0;
                                     max-width: 85%;
                                     p {
@@ -843,8 +842,8 @@
                                             @include styleText($color-white-0, $fs-1, $fw-normal);
                                             background-color: $color-red-1;
                                             border-radius: 4px;
-                                            padding: 3px 6px;
-                                            margin-right: 5px;
+                                            padding: $pd-0 - 2 $pd-0 + 1;
+                                            margin-right: $mg-0;
                                             display: inline-block;
                                         }
                                     }
@@ -861,18 +860,19 @@
                                 @include fontText($font-SFMedium);
                                 @include styleText($color-black-0, $fs-4, $fw-bold-2);
                                 display: block;
-                                margin: 13px 0 5px 0;
+                                margin: $mg-4 - 2 0 $mg-0 0;
                             }
                             .nav-show-times {
-                                padding: 10px 0 35px 0;
+                                padding: $pd-1 0 $pd-6 0;
                                 margin: 0;
                                 .time-item {
                                     padding: 0;
                                     transition: all 0.2s;
+                                    margin-bottom: $mg-5;
                                     a {
                                         border: $border;
                                         border-radius: 7px;
-                                        padding: 11px 8px;
+                                        padding: $pd-1 + 1 $pd-1 - 2;
                                         text-decoration: none;
                                         border: 1px solid $color-gray-5;
                                         background-color: rgba(246, 246, 246, 0.5);
