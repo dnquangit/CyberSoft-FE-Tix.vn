@@ -86,35 +86,6 @@
     }
 }
 
-//  MOVELISt
-// .movieList {
-//     .movieList-carousel-title {
-//         margin-top: $mg-3;
-//         margin-bottom: $mg-3;
-//         margin-right: $mg-1;
-//         list-style: none;
-//         .movieList-text-title {
-//             padding: $pd-0;
-//             a {
-//                 text-decoration: none;
-//                 @include fontText($font-SFMedium);
-//                 @include styleText($color-black-0, $fs-4 + 4, $fw-normal);
-//                 line-height: 24px;
-//                 height: 24px;
-//                 transition: all 0.2s;
-//             }
-//             &:hover a {
-//                 @include styleText($color-black-0, $fs-5, $fw-normal);
-//             }
-//         }
-//         .movieList-text-title.active {
-//             a {
-//                 @include styleText($color-red-2, $fs-4 + 4, $fw-normal);
-//             }
-//         }
-//     }
-// }
-
 /*================== NEWS ==================*/
 .news {
     #homeNews {
@@ -406,26 +377,20 @@
     }
 }
 
-// MOVIELITS
+/*================== MOVIELIST ==================*/
 .movieList {
     position: relative;
-    padding: 0;
-
     .buyMovie {
         position: absolute;
         top: -60px;
         left: 50%;
         transform: translate(-50%, -50%);
-
         z-index: 3;
-
         width: 100%;
         background: $color-white-0;
         border-radius: 15px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
         padding: $pd-2 $pd-2;
-
         .buyMovie__selectedItem {
             width: 100%;
             height: 100%;
@@ -435,16 +400,13 @@
             color: $color-gray-0;
             padding-left: $pd-1;
             padding-right: $pd-1;
-
             span {
                 font-size: $fs-4;
                 font-weight: $fw-normal;
                 color: $color-black-0;
             }
-
             a {
                 margin-left: auto;
-
                 i {
                     color: $color-gray-0;
                 }
@@ -535,174 +497,510 @@
             }
         }
     }
-
     #myTabContent {
-        padding-top: $pd-5;
+        padding-top: $pd-0 - 4;
         #now-showing {
             position: relative;
-            width: 100%;
-            .movieList-carousel-items {
-                .item-carousel {
-                    .item-content {
-                        position: relative;
-                        transition: all 0.2s;
-                        .item-img {
+            .now-showing-lg {
+                .movieList-carousel-items {
+                    .item-carousel {
+                        .item-content {
                             position: relative;
-                            img {
-                                margin-bottom: $mg-1;
-                                border-radius: 4px;
-                            }
-                            .bg-under {
-                                opacity: 0;
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                top: 0;
-                                border-radius: 4px;
-                                background: linear-gradient(to top, #000, transparent 100%);
-                                .carousel__playVideo {
+                            transition: all 0.2s;
+                            .item-img {
+                                position: relative;
+                                img {
+                                    margin-bottom: $mg-1;
+                                    border-radius: 4px;
+                                }
+                                .bg-under {
+                                    opacity: 0;
                                     position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                    .icon-play {
-                                        i {
-                                            font-size: $fs-3 + 1;
-                                            color: $color-white-0;
-                                            border: solid 1px $color-white-0;
-                                            border-radius: 50%;
-                                            padding: $pd-2 $pd-2 $pd-2 $pd-2 + 4;
-                                            font-weight: bold;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    border-radius: 4px;
+                                    background: linear-gradient(to top, #000, transparent 100%);
+                                    .carousel__playVideo {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        .icon-play {
+                                            i {
+                                                font-size: $fs-3 + 1;
+                                                color: $color-white-0;
+                                                border: solid 1px $color-white-0;
+                                                border-radius: 50%;
+                                                padding: $pd-2 $pd-2 $pd-2 $pd-2 + 4;
+                                                font-weight: bold;
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-                        .item-text {
-                            .name-text {
+                            .item-text {
+                                .name-text {
+                                    @include fontText($font-SFMedium);
+                                    @include styleText($color-black-0, $fs-4, $fw-normal);
+                                    height: 42px;
+                                    max-height: 42px;
+                                    line-height: $line-height-0 - 3;
+                                    margin-bottom: 0;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    span {
+                                        @include styleText($color-white-0, $fs-3, $fw-normal);
+                                        background-color: $color-red-1;
+                                        border-radius: 4px;
+                                        padding: 0 5px;
+                                        // min-width: 33px;
+                                        text-align: center;
+                                        display: inline-block;
+                                        margin-right: $mg-1 - 2;
+                                    }
+                                }
+                                .time-text {
+                                    @include styleText($color-gray-1$color-black-0, $fs-2, $fw-normal);
+                                    margin-bottom: 1$mg-1 + 5;
+                                    margin-top: $mg-1 - 2;
+                                }
+                            }
+                            .item-rating {
                                 @include fontText($font-SFMedium);
-                                @include styleText($color-black-0, $fs-4, $fw-normal);
-                                height: 42px;
-                                max-height: 42px;
-                                line-height: $line-height-0 - 3;
-                                margin-bottom: 0;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                span {
-                                    @include styleText($color-white-0, $fs-3, $fw-normal);
-                                    background-color: #fb4226;
-                                    border-radius: 4px;
-                                    padding: 0 5px;
-                                    min-width: 33px;
-                                    text-align: center;
-                                    display: inline-block;
-                                    margin-right: $mg-1 - 2;
-                                }
-                            }
-                            .time-text {
-                                @include styleText($color-gray-1$color-black-0, $fs-2, $fw-normal);
-                                margin-bottom: 1$mg-1 + 5;
-                                margin-top: $mg-1 - 2;
-                            }
-                        }
-                        .item-rating {
-                            @include fontText($font-SFMedium);
-                            @include styleText($color-white-0, $fs-4, $fw-normal);
-                            position: absolute;
-                            top: 3%;
-                            right: 5%;
-                            text-align: center;
-                            width: 54px;
-                            background-color: $bg-color-blue-8;
-                            border: 1px solid #1f2e46;
-                            border-radius: 4px;
-                            line-height: 1.1;
-                            padding: 0 2px;
-                            .list-start {
-                                margin: 0 !important;
-                                text-align: center;
-                                display: flex;
-                                justify-content: center;
-                                .smallStart {
-                                    max-width: 8px;
-                                    margin-bottom: 5px;
-                                }
-                            }
-                            .text-rating {
-                                margin-bottom: 5px;
-                                margin-top: 4px;
-                                transform: scaleY(1.2);
                                 @include styleText($color-white-0, $fs-4, $fw-normal);
+                                position: absolute;
+                                top: 3%;
+                                right: 5%;
+                                text-align: center;
+                                width: 54px;
+                                background-color: $bg-color-blue-8;
+                                border: 1px solid #1f2e46;
+                                border-radius: 4px;
+                                line-height: 1.1;
+                                padding: 0 2px;
+                                .list-start {
+                                    margin: 0 !important;
+                                    text-align: center;
+                                    display: flex;
+                                    justify-content: center;
+                                    .smallStart {
+                                        max-width: 8px;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                                .text-rating {
+                                    margin-bottom: 5px;
+                                    margin-top: 4px;
+                                    transform: scaleY(1.2);
+                                    @include styleText($color-white-0, $fs-4, $fw-normal);
+                                }
                             }
-                        }
-                        .movie-type {
-                            position: absolute;
-                            top: -5%;
-                            left: -4%;
-                            width: 80%;
-                            pointer-events: none;
-                            overflow: hidden;
-                            transform: translate(-5%, -12%);
-                            max-width: 150px;
-                        }
-                        .text-under {
-                            opacity: 0;
-                            position: absolute;
-                            bottom: 7%;
-                            width: 100%;
-                            height: 12%;
-                            border-radius: 4px;
-                            text-align: center;
-                            padding: 10px 0;
-                            transition: all 0.2s;
-                            background: linear-gradient(to left, $color-red-1, $color-red-3 100%);
-                            p {
-                                @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
-                            }
-                            &:hover {
-                                background: $color-red-1;
-                            }
-                        }
-                        &:hover {
-                            .bg-under {
-                                opacity: 1;
+                            .movie-type {
+                                position: absolute;
+                                top: -5%;
+                                left: -4%;
+                                width: 80%;
+                                pointer-events: none;
+                                overflow: hidden;
+                                transform: translate(-5%, -12%);
+                                max-width: 150px;
                             }
                             .text-under {
-                                opacity: 1;
-                            }
-                            .item-text {
                                 opacity: 0;
+                                position: absolute;
+                                bottom: 7%;
+                                width: 100%;
+                                height: 12%;
+                                border-radius: 4px;
+                                text-align: center;
+                                padding: 10px 0;
+                                transition: all 0.2s;
+                                background: linear-gradient(to left, $color-red-1, $color-red-3 100%);
+                                p {
+                                    @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
+                                }
+                                &:hover {
+                                    background: $color-red-1;
+                                }
+                            }
+                            .premiere-soon {
+                                position: absolute;
+                                right: 10px;
+                                bottom: 89px;
+                                text-align: center;
+                                @include styleText($color-white-0, $fs-1, $fw-bold-4);
+                                background-color: $color-red-1;
+                                border-radius: 4px;
+                                display: block;
+                                padding: 4px 8px;
+                                box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                            }
+                            &:hover {
+                                .bg-under {
+                                    opacity: 1;
+                                }
+                                .text-under {
+                                    opacity: 1;
+                                }
+                                .item-text {
+                                    opacity: 0;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .carousel__prev {
-                position: absolute;
-                top: 40%;
-                left: -8%;
-                width: 50px;
-                height: 54px;
-                z-index: 2;
-                opacity: 0.5;
-                img {
-                    height: 100%;
+                .movie-list-pev {
+                    position: absolute;
+                    top: 40%;
+                    left: -8%;
+                    width: 50px;
+                    height: 54px;
+                    z-index: 2;
+                    opacity: 0.5;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .movie-list-next {
+                    position: absolute;
+                    top: 40%;
+                    right: -8%;
+                    width: 50px;
+                    height: 54px;
+                    z-index: 2;
+                    opacity: 0.5;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .owl-dots {
+                    display: none;
                 }
             }
-            .carousel__next {
-                position: absolute;
-                top: 40%;
-                right: -8%;
-                width: 50px;
-                height: 54px;
-                z-index: 2;
-                opacity: 0.5;
-                img {
-                    height: 100%;
-                }
-            }
-            .owl-dots {
+            .now-showing-md {
                 display: none;
+                .now-showing-item {
+                    position: relative;
+                    margin-top: $mg-2;
+                    img {
+                        border-radius: 4px;
+                    }
+                    .now-showing-item-text {
+                        position: absolute;
+                        left: 10px;
+                        bottom: 10px;
+                        text-align: center;
+                        @include styleText($color-white-0, $fs-3, $fw-normal);
+                        background-color: $color-red-1;
+                        border-radius: 4px;
+                        display: block;
+                        width: 35px;
+                    }
+
+                    .now-showing-item-rating {
+                        @include fontText($font-SFMedium);
+                        @include styleText($color-white-0, $fs-4, $fw-normal);
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                        text-align: center;
+                        width: 54px;
+                        background-color: $bg-color-blue-8;
+                        border: 1px solid #1f2e46;
+                        border-radius: 4px;
+                        line-height: 1.1;
+                        padding: 0 2px;
+                        .list-start {
+                            margin: 0 !important;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            .smallStart {
+                                max-width: 8px;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        .text-rating {
+                            margin-bottom: 5px;
+                            margin-top: 4px;
+                            transform: scaleY(1.2);
+                            @include styleText($color-white-0, $fs-4, $fw-normal);
+                        }
+                    }
+                    .now-showing-movie-type {
+                        position: absolute;
+                        top: -21px;
+                        left: -12px;
+                        overflow: hidden;
+                        max-width: 150px;
+                        transform: translate(-5%, -12%);
+                        img {
+                            max-height: 64px;
+                        }
+                    }
+                    .now-showing-item-premiere-soon {
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        text-align: center;
+                        @include styleText($color-white-0, $fs-1, $fw-bold-4);
+                        background-color: $color-red-1;
+                        border-radius: 4px;
+                        display: block;
+                        padding: 4px 8px;
+                        box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .btn-more {
+                    @include fontText($font-SFRegular);
+                    @include styleText($color-gray-2, $fs-3, $fw-normal);
+                    border: 1px solid $color-gray-2;
+                    border-radius: 4px;
+                    background: 0 0;
+                    padding: 7px 25px;
+                    transition: all 0.2s;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    display: block;
+                    &:hover {
+                        background-color: #fb4226;
+                        border-color: #fb4226;
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+        #coming-soon {
+            position: relative;
+            .coming-soon-lg {
+                .movieList-carousel-items {
+                    .item-carousel {
+                        .item-content {
+                            position: relative;
+                            transition: all 0.2s;
+                            .item-img {
+                                position: relative;
+                                img {
+                                    margin-bottom: $mg-1;
+                                    border-radius: 4px;
+                                }
+                                .bg-under {
+                                    opacity: 0;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    border-radius: 4px;
+                                    background: linear-gradient(to top, #000, transparent 100%);
+                                    .carousel__playVideo {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        .icon-play {
+                                            i {
+                                                font-size: $fs-3 + 1;
+                                                color: $color-white-0;
+                                                border: solid 1px $color-white-0;
+                                                border-radius: 50%;
+                                                padding: $pd-2 $pd-2 $pd-2 $pd-2 + 4;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .item-text {
+                                .name-text {
+                                    @include fontText($font-SFMedium);
+                                    @include styleText($color-black-0, $fs-4, $fw-normal);
+                                    height: 42px;
+                                    max-height: 42px;
+                                    line-height: $line-height-0 - 3;
+                                    margin-bottom: 0;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    span {
+                                        @include styleText($color-white-0, $fs-3, $fw-normal);
+                                        background-color: $color-red-1;
+                                        border-radius: 4px;
+                                        padding: 0 5px;
+                                        text-align: center;
+                                        display: inline-block;
+                                        margin-right: $mg-1 - 2;
+                                    }
+                                }
+                                .time-text {
+                                    @include styleText($color-gray-1$color-black-0, $fs-2, $fw-normal);
+                                    margin-bottom: 1$mg-1 + 5;
+                                    margin-top: $mg-1 - 2;
+                                }
+                            }
+                            .item-rating {
+                                @include fontText($font-SFMedium);
+                                @include styleText($color-white-0, $fs-4, $fw-normal);
+                                position: absolute;
+                                top: 3%;
+                                right: 5%;
+                                text-align: center;
+                                width: 54px;
+                                background-color: $bg-color-blue-8;
+                                border: 1px solid #1f2e46;
+                                border-radius: 4px;
+                                line-height: 1.1;
+                                padding: 0 2px;
+                                .list-start {
+                                    margin: 0 !important;
+                                    text-align: center;
+                                    display: flex;
+                                    justify-content: center;
+                                    .smallStart {
+                                        max-width: 8px;
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                                .text-rating {
+                                    margin-bottom: 5px;
+                                    margin-top: 4px;
+                                    transform: scaleY(1.2);
+                                    @include styleText($color-white-0, $fs-4, $fw-normal);
+                                }
+                            }
+                            .movie-type {
+                                position: absolute;
+                                top: -5%;
+                                left: -4%;
+                                width: 80%;
+                                pointer-events: none;
+                                overflow: hidden;
+                                transform: translate(-5%, -12%);
+                                max-width: 150px;
+                            }
+                            .text-under {
+                                opacity: 0;
+                                position: absolute;
+                                bottom: 7%;
+                                width: 100%;
+                                height: 12%;
+                                border-radius: 4px;
+                                text-align: center;
+                                padding: 10px 0;
+                                transition: all 0.2s;
+                                background: linear-gradient(to left, $color-red-1, $color-red-3 100%);
+                                p {
+                                    @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
+                                }
+                                &:hover {
+                                    background: $color-red-1;
+                                }
+                            }
+                            .premiere-soon {
+                                position: absolute;
+                                right: 10px;
+                                bottom: 89px;
+                                text-align: center;
+                                @include styleText($color-white-0, $fs-1, $fw-bold-4);
+                                background-color: $color-red-1;
+                                border-radius: 4px;
+                                display: block;
+                                padding: 4px 8px;
+                                box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                            }
+                            &:hover {
+                                .bg-under {
+                                    opacity: 1;
+                                }
+                                .text-under {
+                                    opacity: 1;
+                                }
+                                .item-text {
+                                    opacity: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .movie-list-pev {
+                    position: absolute;
+                    top: 40%;
+                    left: -8%;
+                    width: 50px;
+                    height: 54px;
+                    z-index: 2;
+                    opacity: 0.5;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .movie-list-next {
+                    position: absolute;
+                    top: 40%;
+                    right: -8%;
+                    width: 50px;
+                    height: 54px;
+                    z-index: 2;
+                    opacity: 0.5;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .owl-dots {
+                    display: none;
+                }
+            }
+            .coming-soon-md {
+                display: none;
+                .coming-soon-item {
+                    position: relative;
+                    margin-top: $mg-2;
+                    padding-right: $pd-1 - 3;
+                    img {
+                        border-radius: 4px;
+                        height: 460px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 24px;
+                        bottom: 7px;
+                        text-align: center;
+                        @include styleText($color-white-0, $fs-3, $fw-normal);
+                        color: #fff;
+                        font-weight: normal;
+                        background-color: $color-green-1;
+                        border-radius: 4px;
+                        width: 35px;
+                        display: block;
+                    }
+                    p {
+                        position: absolute;
+                        bottom: 8px;
+                        right: 30px;
+                        text-align: center;
+                        @include styleText($color-white-0, $fs-4, $fw-normal);
+                        border-radius: 4px;
+                        background-color: rgba(12, 27, 54, 0.8);
+                        border: 1px solid #1f2e46;
+                        margin-bottom: 0;
+                    }
+                }
+                .btn-more {
+                    @include fontText($font-SFRegular);
+                    @include styleText($color-gray-2, $fs-3, $fw-normal);
+                    border: 1px solid $color-gray-2;
+                    border-radius: 4px;
+                    background: 0 0;
+                    padding: 7px 25px;
+                    transition: all 0.2s;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    display: block;
+                    &:hover {
+                        background-color: #fb4226;
+                        border-color: #fb4226;
+                        color: #fff !important;
+                    }
+                }
             }
         }
     }
@@ -819,7 +1117,7 @@
                             padding-top: $pd-6;
                             width: 100%;
                             .nav-movie-title {
-                                margin: 0;
+                                margin: 0 0 $mg-4 0;
                                 .img-movie {
                                     padding: 0;
                                     max-width: 60px;
@@ -866,7 +1164,7 @@
                                 @include fontText($font-SFMedium);
                                 @include styleText($color-black-0, $fs-4, $fw-bold-2);
                                 display: block;
-                                margin: $mg-4 - 2 0 $mg-0 0;
+                                margin: 0 0 $mg-0 0;
                             }
                             .nav-show-times {
                                 padding: $pd-1 0;
@@ -903,6 +1201,59 @@
                     &::-webkit-scrollbar-thumb {
                         background-color: $color-gray-4;
                         border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*================== responsive movie list ==================*/
+@include responsive("medium") {
+    .movieList {
+        #myTabContent {
+            #now-showing {
+                .now-showing-lg {
+                    display: none;
+                }
+                .now-showing-md {
+                    display: block;
+                }
+            }
+            #coming-soon {
+                .coming-soon-lg {
+                    display: none;
+                }
+                .coming-soon-md {
+                    display: block;
+                }
+            }
+        }
+        .movieList-table {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .movieList {
+        #myTabContent {
+            #now-showing {
+                .now-showing-lg {
+                    .movie-list-prev {
+                        display: none;
+                    }
+                    .movie-list-next {
+                        display: none;
+                    }
+                }
+            }
+            #coming-soon {
+                .coming-soon-lg {
+                    .movie-list-prev {
+                        display: none;
+                    }
+                    .movie-list-next {
+                        display: none;
                     }
                 }
             }

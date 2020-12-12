@@ -154,7 +154,7 @@
         <div class="carousel__next"><img src="./assets/img/img-carousel/next-session.png" alt=""></div>
     </section>
 
-    <section class="container-fluid main-container-940 movieList">
+    <section class=" movieList container-fluid main-container-940">
         <div class="d-none d-xl-flex buyMovie">
             <div class="buyMovie__listMovie">
                 <div class="buyMovie__selectedItem" data-toggle="dropdown" data-flip="false">
@@ -244,6 +244,7 @@
                 </div>
             </div>
         </div>
+        <!-- movie-carousel -->
         <div class="movieList-carousel">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -251,615 +252,666 @@
                         aria-controls="now-showing" aria-selected="true">Đang Chiếu</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="coming-soon-tab" data-toggle="tab" href="#commin-soon" role="tab"
+                    <a class="nav-link" id="coming-soon-tab" data-toggle="tab" href="#coming-soon" role="tab"
                         aria-controls="commin-soon" aria-selected="false">Sắp Chiếu</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="now-showing" role="tabpanel"
                     aria-labelledby="now-showing-tab">
-                    <div class="owl-carousel owl-theme movieList-carousel-items">
-                        <div class="item item-carousel">
-                            <div class="row ">
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                    <div class="now-showing-lg">
+                        <div class="owl-carousel owl-theme movieList-carousel-items">
+                            <div class="item item-carousel">
+                                <div class="row">
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item item-carousel">
-                            <div class="row ">
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="movie-list-pev carousel__prev"><img class="img-fluid"
+                                src="./assets/img/img-carousel/back-session.png" alt="">
+                        </div>
+                        <div class="movie-list-next carousel__next"><img class="img-fluid"
+                                src="./assets/img/img-carousel/next-session.png" alt="">
+                        </div>
                     </div>
-                    <div class="carousel__prev"><img class="img-fluid" src="./assets/img/img-carousel/back-session.png"
-                            alt="">
+                    <!-- responsive movie list-->
+                    <div class="now-showing-md">
+                        <div class="now-show-items">
+                            <div class="now-showing-item">
+                                <img class="w-100"
+                                    src="./assets/img/img-movie-reponsive/tiec-trang-mau-blood-moon-party-_540x225.png"
+                                    alt="">
+                                <span class="now-showing-item-text">
+                                    C18
+                                </span>
+                                <span class="now-showing-item-rating">
+                                    <p class="text-rating">9.2</p>
+                                    <p class="list-start">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                    </p>
+                                </span>
+                                <div class="now-showing-movie-type">
+                                    <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                </div>
+                                <span class="now-showing-item-premiere-soon">
+                                    Suất Chiếu Sớm
+                                </span>
+                            </div>
+                            <div class="now-showing-item">
+                                <img class="w-100"
+                                    src="./assets/img/img-movie-reponsive/tiec-trang-mau-blood-moon-party-_540x225.png"
+                                    alt="">
+                                <span class="now-showing-item-text">
+                                    C18
+                                </span>
+                                <span class="now-showing-item-rating">
+                                    <p class="text-rating">9.2</p>
+                                    <p class="list-start">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
+                                        <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
+                                    </p>
+                                </span>
+                                <div class="now-showing-movie-type">
+                                    <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                </div>
+                                <span class="now-showing-item-premiere-soon">
+                                    Suất Chiếu Sớm
+                                </span>
+                            </div>
+                        </div>
+                        <button class="btn-more btn btn-secondary text-center mt-3">
+                            XEM THÊM <span class="badge badge-primary"></span>
+                        </button>
                     </div>
-                    <div class="carousel__next"><img class="img-fluid" src="./assets/img/img-carousel/next-session.png"
-                            alt="">
-                    </div>
+                    <!-- //end responsive movie list -->
                 </div>
                 <div class="tab-pane fade" id="coming-soon" role="tabpanel" aria-labelledby="coming-soon-tab">
-                    <div class="owl-carousel owl-theme movieList-carousel-items">
-                        <div class="item item-carousel">
-                            <div class="row ">
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                    <div class="coming-soon-lg">
+                        <div class="owl-carousel owl-theme movieList-carousel-items">
+                            <div class="item item-carousel">
+                                <div class="row">
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item item-carousel">
-                            <div class="row ">
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
+                                            </div>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
+                                            </div>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                    <div class="col-3 px-4 py-2">
+                                        <div class="item-content">
+                                            <div class="item-img">
+                                                <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png"
+                                                    alt="">
+                                                <div class="bg-under">
+                                                    <a class="carousel__playVideo"
+                                                        href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
+                                                        <span class="icon-play"><i class="fa fa-play"></i></span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                            <div class="item-text">
+                                                <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
+                                                    (C18)
+                                                </p>
+                                                <p class="time-text">100 phút</p>
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-xs-12 p-4">
-                                    <div class="item-content">
-                                        <div class="item-img">
-                                            <img src="./assets/img/img-movies/me-toi-ganh-doi-mother-gamer.png" alt="">
-                                            <div class="bg-under">
-                                                <a class="carousel__playVideo"
-                                                    href="https://www.youtube.com/watch?v=XRm1P7oGpMQ">
-                                                    <span class="icon-play"><i class="fa fa-play"></i></span>
-                                                </a>
+                                            <span class="item-rating">
+                                                <p class="text-rating">9.2</p>
+                                                <p class="list-start">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.png"
+                                                        alt="">
+                                                    <img class="smallStart" src="./assets/img/img-icons/star1.2.png"
+                                                        alt="">
+                                                </p>
+                                            </span>
+                                            <div class="movie-type">
+                                                <img src="./assets/img/img-icons/film_type_2.png" alt="">
                                             </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <p class="name-text"><span>C18</span> Tiệc Trăng Máu - Blood Moon Party
-                                                (C18)
-                                            </p>
-                                            <p class="time-text">100 phút</p>
-                                        </div>
-                                        <span class="item-rating">
-                                            <p class="text-rating">9.2</p>
-                                            <p class="list-start">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.png" alt="">
-                                                <img class="smallStart" src="./assets/img/img-icons/star1.2.png" alt="">
-                                            </p>
-                                        </span>
-                                        <div class="movie-type">
-                                            <img src="./assets/img/img-icons/film_type_2.png" alt="">
-                                        </div>
-                                        <div class="text-under">
-                                            <p>MUA VÉ</p>
+                                            <span class="premiere-soon">
+                                                Suất Chiếu Sớm
+                                            </span>
+                                            <div class="text-under">
+                                                <p>MUA VÉ</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="movie-list-pev carousel__prev"><img class="img-fluid"
+                                src="./assets/img/img-carousel/back-session.png" alt="">
+                        </div>
+                        <div class="movie-list-next carousel__next"><img class="img-fluid"
+                                src="./assets/img/img-carousel/next-session.png" alt="">
+                        </div>
                     </div>
-                    <div class="carousel__prev"><img class="img-fluid" src="./assets/img/img-carousel/back-session.png"
-                            alt="">
+                    <!-- responsive movie list-->
+                    <div class="coming-soon-md">
+                        <div class="row coming-soon-items">
+                            <div class="col-6 coming-soon-item">
+                                <img class="w-100" src="./assets/img/img-movies/tay-dam-my.png" alt="">
+                                <span>C18</span>
+                                <p>12/02</p>
+                            </div>
+                            <div class="col-6 coming-soon-item">
+                                <img class="w-100" src="./assets/img/img-movies/tay-dam-my.png" alt="">
+                                <span>C18</span>
+                                <p>12/02</p>
+                            </div>
+                            <div class="col-6 coming-soon-item">
+                                <img class="w-100" src="./assets/img/img-movies/tay-dam-my.png" alt="">
+                                <span>C18</span>
+                                <p>12/02</p>
+                            </div>
+                            <div class="col-6 coming-soon-item">
+                                <img class="w-100" src="./assets/img/img-movies/tay-dam-my.png" alt="">
+                                <span>C18</span>
+                                <p>12/02</p>
+                            </div>
+                        </div>
+                        <button class="btn-more btn btn-secondary text-center mt-3">
+                            XEM THÊM <span class="badge badge-primary"></span>
+                        </button>
                     </div>
-                    <div class="carousel__next"><img class="img-fluid" src="./assets/img/img-carousel/next-session.png"
-                            alt="">
-                    </div>
+                    <!-- //end responsive movie list -->
                 </div>
             </div>
         </div>
+        <!-- movie-table -->
         <div class="movieList-table">
             <div class="inemaComplex"></div>
             <div class="movieList-content">
-                <div class="row mx-0 movie-layout-table">
-                    <div class="col-2 icon-cinemas">
+                <div class="row movie-layout-table">
+                    <div class="col-2 col-md-2 icon-cinemas">
                         <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#"><img src="./assets/img/img-icons/bhd.png"
@@ -874,7 +926,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4 intro-cinemas">
+                    <div class="col-4 col-md-4 intro-cinemas">
                         <ul class="nav">
                             <li class="nav-item active">
                                 <div class="row m-0 nav-table">
@@ -907,10 +959,10 @@
 
                         </ul>
                     </div>
-                    <div class="col-6 showTime-cinemas">
+                    <div class="col-6 col-md-6 showTime-cinemas">
                         <ul class="nav nav-table">
                             <li class="nav-item">
-                                <div class="row nav-movie-title">
+                                <div class="row nav-movie-title" id="movie-title-id">
                                     <div class="col-3 img-movie">
                                         <a class="nav-link" href="#">
                                             <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
@@ -923,8 +975,8 @@
                                         <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
                                     </div>
                                 </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
+                                <span class="movie-type" id="movie-type-id">2D Digital</span>
+                                <div class="row nav-show-times" id="show-tiems-id">
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -978,192 +1030,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <div class="row nav-movie-title">
-                                    <div class="col-3 img-movie">
-                                        <a class="nav-link" href="#">
-                                            <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
-                                        <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
-                                    </div>
-                                </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="row nav-movie-title">
-                                    <div class="col-3 img-movie">
-                                        <a class="nav-link" href="#">
-                                            <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
-                                        <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
-                                    </div>
-                                </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="row nav-movie-title">
-                                    <div class="col-3 img-movie">
-                                        <a class="nav-link" href="#">
-                                            <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
-                                        <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
-                                    </div>
-                                </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="row nav-movie-title">
-                                    <div class="col-3 img-movie">
-                                        <a class="nav-link" href="#">
-                                            <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
-                                        <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
-                                    </div>
-                                </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="row nav-movie-title">
-                                    <div class="col-3 img-movie">
-                                        <a class="nav-link" href="#">
-                                            <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
-                                        <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
-                                    </div>
-                                </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                    <div class="col-3 time-item">
-                                        <a href="">
-                                            <span class="start-time">11:20</span> ~ 16:50
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="row nav-movie-title">
+                                <div class="row nav-movie-title" id="movie-title-id">
                                     <div class="col-3 img-movie">
                                         <a class="nav-link" href="#">
                                             <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
@@ -1176,8 +1043,8 @@
                                         <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
                                     </div>
                                 </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
+                                <span class="movie-type" id="movie-type-id">2D Digital</span>
+                                <div class="row nav-show-times" id="show-tiems-id">
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -1231,7 +1098,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <div class="row nav-movie-title">
+                                <div class="row nav-movie-title" id="movie-title-id">
                                     <div class="col-3 img-movie">
                                         <a class="nav-link" href="#">
                                             <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
@@ -1239,12 +1106,43 @@
                                         </a>
                                     </div>
                                     <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the
+                                            Windssssssssssssssssssssssssssssssssssssssss</p>
                                         <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
                                     </div>
                                 </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
+                                <span class="movie-type" id="movie-type-id">2D Digital</span>
+                                <div class="row nav-show-times" id="show-tiems-id">
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -1268,7 +1166,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <div class="row nav-movie-title">
+                                <div class="row nav-movie-title" id="movie-title-id">
                                     <div class="col-3 img-movie">
                                         <a class="nav-link" href="#">
                                             <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
@@ -1276,12 +1174,43 @@
                                         </a>
                                     </div>
                                     <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the
+                                            Windssssssssssssssssssssssssssssssssssssssss</p>
                                         <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
                                     </div>
                                 </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
+                                <span class="movie-type" id="movie-type-id">2D Digital</span>
+                                <div class="row nav-show-times" id="show-tiems-id">
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -1305,7 +1234,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <div class="row nav-movie-title">
+                                <div class="row nav-movie-title" id="movie-title-id">
                                     <div class="col-3 img-movie">
                                         <a class="nav-link" href="#">
                                             <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
@@ -1313,12 +1242,43 @@
                                         </a>
                                     </div>
                                     <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the
+                                            Windssssssssssssssssssssssssssssssssssssssss</p>
                                         <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
                                     </div>
                                 </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
+                                <span class="movie-type" id="movie-type-id">2D Digital</span>
+                                <div class="row nav-show-times" id="show-tiems-id">
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
+                                    </div>
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -1342,7 +1302,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <div class="row nav-movie-title">
+                                <div class="row nav-movie-title" id="movie-title-id">
                                     <div class="col-3 img-movie">
                                         <a class="nav-link" href="#">
                                             <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
@@ -1350,12 +1310,13 @@
                                         </a>
                                     </div>
                                     <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
+                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the
+                                            Windssssssssssssssssssssssssssssssssssssssss</p>
                                         <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
                                     </div>
                                 </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
+                                <span class="movie-type" id="movie-type-id">2D Digital</span>
+                                <div class="row nav-show-times" id="show-tiems-id">
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -1376,23 +1337,16 @@
                                             <span class="start-time">11:20</span> ~ 16:50
                                         </a>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="row nav-movie-title">
-                                    <div class="col-3 img-movie">
-                                        <a class="nav-link" href="#">
-                                            <img src="./assets/img/logo-img-movies/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png"
-                                                alt="">
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
                                         </a>
                                     </div>
-                                    <div class="col-9 content-movie">
-                                        <p><span>C16</span>Bí Mật Của Gió - Secrets of the Wind</p>
-                                        <span class="detail-movie">95 phút - TIX 7.4 - IMDb 0</span>
+                                    <div class="col-3 time-item">
+                                        <a href="">
+                                            <span class="start-time">11:20</span> ~ 16:50
+                                        </a>
                                     </div>
-                                </div>
-                                <span class="movie-type">2D Digital</span>
-                                <div class="row nav-show-times">
                                     <div class="col-3 time-item">
                                         <a href="">
                                             <span class="start-time">11:20</span> ~ 16:50
@@ -2402,6 +2356,21 @@
             $('.buyMovie__showTime .buyMovie__selectedItem span').text(e.target.text);
         });
 
+        document.querySelector('#movie-title-id').onclick = function () {
+            var showTimes = document.getElementById('show-tiems-id');
+            var movieType = document.getElementById('movie-type-id');
+
+            var display = showTimes.style.display;
+
+            if (display === 'none') {
+                movieType.style.display = 'block';
+                showTimes.style.display = 'flex';
+            } else {
+                showTimes.style.display = 'none';
+                movieType.style.display = 'none';
+            }
+
+        }
     </script>
 
 </body>
